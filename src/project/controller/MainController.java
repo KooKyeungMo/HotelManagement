@@ -1,12 +1,17 @@
 package project.controller;
 
+import javafx.application.Platform;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 /**
@@ -14,16 +19,38 @@ import java.util.ResourceBundle;
  */
 public class MainController implements Initializable {
     @FXML
-    TabPane customer,room,reservation,board,stats;
+    TabPane customer, room, reservation, board, stats;
     @FXML
     Pane welcome;
+    @FXML
+    Label timebar;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Thread task = new Thread(() -> {
+            SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd a hh:mm:ss");
 
+            while (true) {
+                String strTime = sdf.format(new Date());
+                Platform.runLater(() ->
+                {
+                    timebar.setText(strTime);
+                });
+
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        task.setDaemon(true);
+        task.start();
     }
 
     public void setOnCustomer(Event event) {
-        System.out.println("°ν°΄");
+        System.out.println("κ³ κ°");
         customer.setVisible(true);
         room.setVisible(false);
         reservation.setVisible(false);
@@ -33,7 +60,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnRoom(Event event) {
-        System.out.println("°΄½Η");
+        System.out.println("κ°μ‹¤");
         customer.setVisible(false);
         room.setVisible(true);
         reservation.setVisible(false);
@@ -43,7 +70,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnReservation(Event event) {
-        System.out.println("ΏΉΎΰ");
+        System.out.println("μμ•½");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(true);
@@ -53,7 +80,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnBoard(Event event) {
-        System.out.println("°Τ½ΓΖΗ");
+        System.out.println("κ²μ‹ν");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);
@@ -63,7 +90,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnStats(Event event) {
-        System.out.println("Ελ°θ");
+        System.out.println("ν†µκ³„");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);

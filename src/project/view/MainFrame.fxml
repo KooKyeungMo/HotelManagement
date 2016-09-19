@@ -10,7 +10,10 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.MainController">
    <bottom>
-      <Pane prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="timebar" layoutX="832.0" layoutY="-1.0" prefHeight="40.0" prefWidth="186.0" text="Label" textFill="WHITE" />
+         </children></Pane>
    </bottom>
    <top>
       <HBox prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #CCCCCC;" stylesheets="@../MenuBar.css" BorderPane.alignment="CENTER">
