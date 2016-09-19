@@ -23,7 +23,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnCustomer(Event event) {
-        System.out.println("°ν°΄");
+        System.out.println("κ³ κ°");
         customer.setVisible(true);
         room.setVisible(false);
         reservation.setVisible(false);
@@ -33,7 +33,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnRoom(Event event) {
-        System.out.println("°΄½Η");
+        System.out.println("κ°μ‹¤");
         customer.setVisible(false);
         room.setVisible(true);
         reservation.setVisible(false);
@@ -43,7 +43,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnReservation(Event event) {
-        System.out.println("ΏΉΎΰ");
+        System.out.println("μμ•½");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(true);
@@ -53,7 +53,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnBoard(Event event) {
-        System.out.println("°Τ½ΓΖΗ");
+        System.out.println("κ²μ‹ν");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);
@@ -63,7 +63,7 @@ public class MainController implements Initializable {
     }
 
     public void setOnStats(Event event) {
-        System.out.println("Ελ°θ");
+        System.out.println("ν†µκ³„");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);
