@@ -51,14 +51,86 @@
          <children>
             <TabPane fx:id="customer" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
               <tabs>
-                <Tab fx:id="me1" text="고객 정보 조회">
+                <Tab fx:id="me1" text="고객 관리">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </Tab>
-                <Tab text="고객 정보 수">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="280.0" layoutY="36.0" text="고객 검색">
+                                 <font>
+                                    <Font name="Consolas Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="750.0" layoutY="72.0" mnemonicParsing="false" text="전체보기" />
+                              <Button layoutX="872.0" layoutY="72.0" mnemonicParsing="false" text="삭제" />
+                              <Button layoutX="823.0" layoutY="72.0" mnemonicParsing="false" text="수정" />
+                              <TableView layoutX="86.0" layoutY="496.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
+                                 <columns>
+                                    <TableColumn prefWidth="48.0">
+                                       <graphic>
+                                          <CheckBox mnemonicParsing="false" />
+                                       </graphic>
+                                    </TableColumn>
+                                    <TableColumn prefWidth="75.0" text="No" />
+                                    <TableColumn prefWidth="92.0" text="이름" />
+                                    <TableColumn prefWidth="120.0" text="예약 번호" />
+                                    <TableColumn prefWidth="95.0" text="예약일" />
+                                    <TableColumn prefWidth="95.0" text="기간" />
+                                    <TableColumn minWidth="0.0" prefWidth="85.0" text="객실명" />
+                                    <TableColumn prefWidth="95.0" text="이용객수" />
+                                    <TableColumn prefWidth="95.0" text="접수일자" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="112.0" layoutY="470.0" text="이용 현황">
+                                 <font>
+                                    <Font name="Consolas Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TableView layoutX="112.0" layoutY="102.0" prefHeight="211.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
+                                 <columns>
+                                    <TableColumn prefWidth="48.0">
+                                       <graphic>
+                                          <CheckBox mnemonicParsing="false" />
+                                       </graphic>
+                                    </TableColumn>
+                                    <TableColumn prefWidth="75.0" text="No" />
+                                    <TableColumn minWidth="95.0" prefWidth="92.0" text="이름" />
+                                    <TableColumn minWidth="95.0" prefWidth="85.0" text="아이디" />
+                                    <TableColumn prefWidth="85.0" text="생년월일" />
+                                    <TableColumn prefWidth="100.0" text="전화번호" />
+                                    <TableColumn prefWidth="220.0" text="email" />
+                                    <TableColumn minWidth="0.0" text="가입일" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="112.0" layoutY="329.0" text="마일리지 정보">
+                                 <font>
+                                    <Font name="Consolas Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TableView layoutX="112.0" layoutY="353.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
+                                 <columns>
+                                    <TableColumn prefWidth="48.0">
+                                       <graphic>
+                                          <CheckBox mnemonicParsing="false" />
+                                       </graphic>
+                                    </TableColumn>
+                                    <TableColumn prefWidth="75.0" text="No" />
+                                    <TableColumn prefWidth="92.0" text="이름" />
+                                    <TableColumn text="등급" />
+                                    <TableColumn prefWidth="75.0" text="적립금" />
+                                    <TableColumn prefWidth="100.0" text="사용가능 적립금" />
+                                    <TableColumn prefWidth="100.0" text="소멸예정 적립금" />
+                                    <TableColumn prefWidth="120.0" text="소멸예정일" />
+                                 </columns>
+                              </TableView>
+                              <TextField layoutX="470.0" layoutY="33.0" />
+                              <Button layoutX="614.0" layoutY="33.0" mnemonicParsing="false" text="검색" />
+                              <ComboBox layoutX="351.0" layoutY="33.0" prefHeight="23.0" prefWidth="110.0" />
+                              <Label layoutX="112.0" layoutY="75.0" text="고객 정보">
+                                 <font>
+                                    <Font name="Consolas Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
                   </content>
                 </Tab>
               </tabs>
@@ -242,15 +314,15 @@
                   </Tab>
                </tabs>
             </TabPane>
-            <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <ImageView fitHeight="427.0" fitWidth="801.0" layoutX="65.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/welcome.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
+             <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0">
+                 <children>
+                     <ImageView fitHeight="427.0" fitWidth="801.0" layoutX="65.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@../img/welcome.png" />
+                         </image>
+                     </ImageView>
+                 </children>
+             </Pane>
          </children>
       </StackPane>
    </center>
