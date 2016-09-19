@@ -128,9 +128,8 @@
                                                   <TableColumn text="예약 번호" />
                                                   <TableColumn text="예약 고객" />
                                                   <TableColumn prefWidth="144.0" text="예약 완료 객실 이름" />
-                                                  <TableColumn prefWidth="100.0" text="시작 날짜" />
-                                                  <TableColumn prefWidth="100.0" text="끝 날짜" />
-                                                  <TableColumn prefWidth="100.0" text="도착 예정 시간" />
+                                                  <TableColumn prefWidth="100.0" text="체크 인" />
+                                                  <TableColumn prefWidth="100.0" text="체크 아웃" />
                                                   <TableColumn prefWidth="100.0" text="결제 현황" />
                                                   <TableColumn prefWidth="100.0" text="담당자" />
                                               </columns>
