@@ -98,7 +98,7 @@
                                     <TableColumn prefWidth="85.0" text="생년월일" />
                                     <TableColumn prefWidth="100.0" text="전화번호" />
                                     <TableColumn prefWidth="220.0" text="email" />
-                                    <TableColumn minWidth="0.0" text="가입일" />
+                                    <TableColumn minWidth="0.0" prefWidth="85.0" text="가입일" />
                                  </columns>
                               </TableView>
                               <Label layoutX="112.0" layoutY="329.0" text="마일리지 정보">
