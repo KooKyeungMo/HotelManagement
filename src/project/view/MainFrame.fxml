@@ -169,7 +169,7 @@
                 </Tab>
               </tabs>
             </TabPane>
-            <TabPane fx:id="room" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane fx:id="room" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
                <tabs>
                   <Tab text="객실 관리">
                      <content>
@@ -431,6 +431,15 @@
                   </Tab>
                </tabs>
             </TabPane>
+             <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0">
+                 <children>
+                     <ImageView fitHeight="427.0" fitWidth="801.0" layoutX="65.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@../img/welcome.png" />
+                         </image>
+                     </ImageView>
+                 </children>
+             </Pane>
          </children>
       </StackPane>
    </center>
