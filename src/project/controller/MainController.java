@@ -89,7 +89,9 @@ public class MainController implements Initializable {
         board.setVisible(false);
         stats.setVisible(false);
         welcome.setVisible(true);
-    }    public void oneDay(ActionEvent event) throws Exception{
+    }
+
+    public void oneDay(ActionEvent event) throws Exception{
 
         first.setValue(LocalDate.of(year, month, day));
         second.setValue(LocalDate.of(year, month, day));
