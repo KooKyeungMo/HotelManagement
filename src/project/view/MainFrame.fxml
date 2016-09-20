@@ -149,84 +149,84 @@
                   </Tab>
                </tabs>
             </TabPane>
-            <TabPane fx:id="reservation" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
-               <tabs>
-                  <Tab text="예약 관리">
-                      <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                              <children>
-                                  <HBox cache="true" layoutX="194.0" layoutY="3.0" prefHeight="23.0" prefWidth="636.0">
-                                      <children>
-                                          <Button mnemonicParsing="false" text="오늘">
-                                              <HBox.margin>
-                                                  <Insets left="10.0" />
-                                              </HBox.margin>
-                                          </Button>
-                                          <Button mnemonicParsing="false" text="1주">
-                                              <HBox.margin>
-                                                  <Insets left="5.0" />
-                                              </HBox.margin>
-                                          </Button>
-                                          <Button mnemonicParsing="false" text="한달">
-                                              <HBox.margin>
-                                                  <Insets left="5.0" />
-                                              </HBox.margin>
-                                          </Button>
-                                          <DatePicker>
-                                              <HBox.margin>
-                                                  <Insets left="50.0" right="20.0" />
-                                              </HBox.margin>
-                                          </DatePicker>
-                                          <Label prefHeight="23.0" prefWidth="6.0" text="~" />
-                                          <DatePicker>
-                                              <HBox.margin>
-                                                  <Insets left="20.0" />
-                                              </HBox.margin>
-                                          </DatePicker>
-                                          <Button mnemonicParsing="false" text="검색">
-                                              <HBox.margin>
-                                                  <Insets left="20.0" />
-                                              </HBox.margin>
-                                          </Button>
-                                      </children>
-                                      <opaqueInsets>
-                                          <Insets />
-                                      </opaqueInsets>
-                                  </HBox>
-                                  <Pane layoutX="112.0" layoutY="34.0" prefHeight="330.0" prefWidth="800.0">
-                                      <children>
-                                          <TableView prefHeight="330.0" prefWidth="800.0">
-                                              <columns>
-                                                  <TableColumn text="예약 번호" />
-                                                  <TableColumn text="예약 고객" />
-                                                  <TableColumn prefWidth="144.0" text="예약 완료 객실 이름" />
-                                                  <TableColumn prefWidth="100.0" text="체크 인" />
-                                                  <TableColumn prefWidth="100.0" text="체크 아웃" />
-                                                  <TableColumn prefWidth="100.0" text="결제 현황" />
-                                                  <TableColumn prefWidth="100.0" text="담당자" />
-                                              </columns>
-                                          </TableView>
-                                      </children>
-                                  </Pane>
-                                  <Pane layoutX="162.0" layoutY="372.0" prefHeight="300.0" prefWidth="700.0">
-                                      <children>
-                                          <TableView prefHeight="300.0" prefWidth="700.0">
-                                              <columns>
-                                                  <TableColumn editable="false" prefWidth="144.0" text="남은 객실 이름" />
-                                                  <TableColumn editable="false" prefWidth="100.0" text="남은 객실 수" />
-                                                  <TableColumn editable="false" prefWidth="105.0" text="객실 적정 인원" />
-                                                  <TableColumn editable="false" prefWidth="120.0" text="객실 면적" />
-                                                  <TableColumn editable="false" prefWidth="120.0" text="객실 요금" />
-                                                  <TableColumn editable="false" prefWidth="110.0" text="담당자" />
-                                              </columns>
-                                          </TableView>
-                                      </children>
-                                  </Pane>
-                              </children></AnchorPane>
-                      </content>
-                  </Tab>
-               </tabs>
-            </TabPane>
+             <TabPane fx:id="reservation" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+                 <tabs>
+                     <Tab text="예약 관리">
+                         <content>
+                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                     <HBox cache="true" layoutX="194.0" layoutY="3.0" prefHeight="23.0" prefWidth="636.0">
+                                         <children>
+                                             <Button mnemonicParsing="false" onAction="#oneDay" text="오늘">
+                                                 <HBox.margin>
+                                                     <Insets left="10.0" />
+                                                 </HBox.margin>
+                                             </Button>
+                                             <Button mnemonicParsing="false" onAction="#week" text="1주">
+                                                 <HBox.margin>
+                                                     <Insets left="5.0" />
+                                                 </HBox.margin>
+                                             </Button>
+                                             <Button mnemonicParsing="false" onAction="#month" text="한달">
+                                                 <HBox.margin>
+                                                     <Insets left="5.0" />
+                                                 </HBox.margin>
+                                             </Button>
+                                             <DatePicker fx:id="first">
+                                                 <HBox.margin>
+                                                     <Insets left="50.0" right="20.0" />
+                                                 </HBox.margin>
+                                             </DatePicker>
+                                             <Label prefHeight="23.0" prefWidth="6.0" text="~" />
+                                             <DatePicker fx:id="second">
+                                                 <HBox.margin>
+                                                     <Insets left="20.0" />
+                                                 </HBox.margin>
+                                             </DatePicker>
+                                             <Button mnemonicParsing="false" text="검색">
+                                                 <HBox.margin>
+                                                     <Insets left="20.0" />
+                                                 </HBox.margin>
+                                             </Button>
+                                         </children>
+                                         <opaqueInsets>
+                                             <Insets />
+                                         </opaqueInsets>
+                                     </HBox>
+                                     <Pane layoutX="112.0" layoutY="34.0" prefHeight="330.0" prefWidth="800.0">
+                                         <children>
+                                             <TableView prefHeight="330.0" prefWidth="800.0">
+                                                 <columns>
+                                                     <TableColumn text="예약 번호" />
+                                                     <TableColumn text="예약 고객" />
+                                                     <TableColumn prefWidth="144.0" text="예약 완료 객실 이름" />
+                                                     <TableColumn prefWidth="100.0" text="체크 인" />
+                                                     <TableColumn prefWidth="100.0" text="체크 아웃" />
+                                                     <TableColumn prefWidth="100.0" text="결제 현황" />
+                                                     <TableColumn prefWidth="100.0" text="담당자" />
+                                                 </columns>
+                                             </TableView>
+                                         </children>
+                                     </Pane>
+                                     <Pane layoutX="162.0" layoutY="372.0" prefHeight="300.0" prefWidth="700.0">
+                                         <children>
+                                             <TableView prefHeight="300.0" prefWidth="700.0">
+                                                 <columns>
+                                                     <TableColumn editable="false" prefWidth="144.0" text="남은 객실 이름" />
+                                                     <TableColumn editable="false" prefWidth="100.0" text="남은 객실 수" />
+                                                     <TableColumn editable="false" prefWidth="105.0" text="객실 적정 인원" />
+                                                     <TableColumn editable="false" prefWidth="120.0" text="객실 면적" />
+                                                     <TableColumn editable="false" prefWidth="120.0" text="객실 요금" />
+                                                     <TableColumn editable="false" prefWidth="110.0" text="담당자" />
+                                                 </columns>
+                                             </TableView>
+                                         </children>
+                                     </Pane>
+                                 </children></AnchorPane>
+                         </content>
+                     </Tab>
+                 </tabs>
+             </TabPane>
             <TabPane fx:id="board" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
                <tabs>
                   <Tab text="이벤트 관리">

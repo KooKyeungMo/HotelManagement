@@ -1,12 +1,18 @@
 package project.controller;
 
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 /**
@@ -17,6 +23,13 @@ public class MainController implements Initializable {
     TabPane customer,room,reservation,board,stats;
     @FXML
     Pane welcome;
+
+    @FXML DatePicker first;
+    @FXML DatePicker second;
+    private int day;
+    private int month;
+    private int year;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -79,5 +92,22 @@ public class MainController implements Initializable {
         board.setVisible(false);
         stats.setVisible(false);
         welcome.setVisible(true);
+    }    public void oneDay(ActionEvent event) throws Exception{
+
+        first.setValue(LocalDate.of(year, month, day));
+        second.setValue(LocalDate.of(year, month, day));
     }
+
+    public void week(ActionEvent event) {
+        int day7 = day + 7;
+        first.setValue(LocalDate.of(year, month, day));
+        second.setValue(LocalDate.of(year, month, day7));
+    }
+
+    public void month(ActionEvent event) {
+        int month1 = month + 1;
+        first.setValue(LocalDate.of(year, month, day));
+        second.setValue(LocalDate.of(year, month1, day));
+    }
+
 }
