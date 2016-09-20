@@ -175,7 +175,7 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <TableView layoutX="86.0" layoutY="128.0" prefHeight="400.0" prefWidth="800.0">
+                              <TableView layoutX="110.0" layoutY="126.0" prefHeight="400.0" prefWidth="800.0">
                                  <columns>
                                     <TableColumn prefWidth="60.0" text="객실번호" />
                                     <TableColumn prefWidth="118.0" text="객실이름" />
@@ -187,7 +187,7 @@
                                     <TableColumn prefWidth="109.0" text="등록일" />
                                  </columns>
                               </TableView>
-                              <HBox alignment="CENTER" layoutX="706.0" layoutY="74.0" prefHeight="29.0" prefWidth="203.0" spacing="15.0">
+                              <HBox alignment="CENTER" layoutX="730.0" layoutY="75.0" prefHeight="29.0" prefWidth="203.0" spacing="15.0">
                                  <children>
                                     <Button mnemonicParsing="false" text="삭제" />
                                     <Button mnemonicParsing="false" text="수정" />
@@ -210,13 +210,22 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <HBox layoutX="457.0" layoutY="87.0" prefHeight="20.0" prefWidth="236.0">
+                              <HBox layoutX="301.0" layoutY="88.0" prefHeight="24.0" prefWidth="211.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="객실 검색" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></Label>
+                                    <ComboBox prefWidth="150.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="512.0" layoutY="88.0" prefHeight="20.0" prefWidth="236.0" spacing="5.0">
                                  <children>
                                     <TextField alignment="CENTER" />
                                     <Button mnemonicParsing="false" text="검색" />
                                  </children>
                               </HBox>
-                              <TableView layoutX="102.0" layoutY="137.0" prefHeight="400.0" prefWidth="800.0">
+                              <TableView layoutX="102.0" layoutY="137.0" prefHeight="259.0" prefWidth="800.0">
                                 <columns>
                                   <TableColumn prefWidth="60.0" text="객실번호" />
                                     <TableColumn prefWidth="118.0" text="객실이름" />
@@ -228,15 +237,30 @@
                                     <TableColumn prefWidth="109.0" text="등록일" />
                                 </columns>
                               </TableView>
-                              <HBox layoutX="240.0" layoutY="87.0" prefHeight="24.0" prefWidth="211.0">
+                              <HBox layoutX="94.0" layoutY="417.0" prefHeight="139.0" prefWidth="832.0" spacing="10.0">
                                  <children>
-                                    <Label alignment="CENTER" contentDisplay="CENTER" text="객실 검색" textAlignment="CENTER">
-                                       <font>
-                                          <Font size="13.0" />
-                                       </font></Label>
-                                    <ComboBox prefWidth="150.0" />
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/room1.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/room2.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/room3.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="158.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/room4.JPG" />
+                                       </image></ImageView>
                                  </children>
                               </HBox>
+                              <ScrollBar layoutX="103.0" layoutY="579.0" prefHeight="14.0" prefWidth="816.0" />
                            </children></AnchorPane>
                      </content>
                   </Tab>
