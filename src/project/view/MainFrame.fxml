@@ -189,9 +189,9 @@
                               </TableView>
                               <HBox alignment="CENTER" layoutX="730.0" layoutY="75.0" prefHeight="29.0" prefWidth="203.0" spacing="15.0">
                                  <children>
-                                    <Button mnemonicParsing="false" text="삭제" />
-                                    <Button mnemonicParsing="false" text="수정" />
-                                    <Button mnemonicParsing="false" text="등록" />
+                                    <Button fx:id="delete" mnemonicParsing="false" text="삭제" />
+                                    <Button fx:id="change" mnemonicParsing="false" text="수정" />
+                                    <Button fx:id="registration" mnemonicParsing="false" text="등록" />
                                  </children>
                               </HBox>
                                <Pane fx:id="welcome" layoutX="310.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0">
@@ -222,7 +222,7 @@
                               <HBox layoutX="512.0" layoutY="88.0" prefHeight="20.0" prefWidth="236.0" spacing="5.0">
                                  <children>
                                     <TextField alignment="CENTER" />
-                                    <Button mnemonicParsing="false" text="검색" />
+                                    <Button fx:id="find" mnemonicParsing="false" text="검색" />
                                  </children>
                               </HBox>
                               <TableView layoutX="102.0" layoutY="137.0" prefHeight="259.0" prefWidth="800.0">
