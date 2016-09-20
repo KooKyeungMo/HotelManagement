@@ -10,6 +10,8 @@ import javafx.scene.layout.Pane;
 
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 /**
@@ -29,7 +31,11 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        Calendar c = Calendar.getInstance();
+        c.setTime( new Date() );
+        year =  c.get(Calendar.YEAR) ;
+        month =  c.get(Calendar.MONTH) + 1 ;
+        day =  c.get(Calendar.DAY_OF_MONTH) ;
     }
 
     public void setOnCustomer(Event event) {
@@ -91,7 +97,7 @@ public class MainController implements Initializable {
         welcome.setVisible(true);
     }
 
-    public void oneDay(ActionEvent event) throws Exception{
+    public void oneDay(ActionEvent event) {
 
         first.setValue(LocalDate.of(year, month, day));
         second.setValue(LocalDate.of(year, month, day));
