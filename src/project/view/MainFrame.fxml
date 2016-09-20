@@ -314,7 +314,7 @@
                                          <children>
                                              <TableView prefHeight="330.0" prefWidth="800.0">
                                                  <columns>
-                                                     <TableColumn text="예약 번호" />
+                                                     <TableColumn fx:id="regno" text="예약 번호" />
                                                      <TableColumn text="예약 고객" />
                                                      <TableColumn prefWidth="144.0" text="예약 완료 객실 이름" />
                                                      <TableColumn prefWidth="100.0" text="체크 인" />
