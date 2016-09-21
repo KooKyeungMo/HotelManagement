@@ -327,7 +327,7 @@
                                     </Pane>
                                     <Pane layoutX="162.0" layoutY="372.0" prefHeight="300.0" prefWidth="700.0">
                                         <children>
-                                            <TableView fx:id="reserv" prefHeight="300.0" prefWidth="700.0">
+                                            <TableView fx:id="remainder" prefHeight="300.0" prefWidth="700.0">
                                                 <columns>
                                                     <TableColumn fx:id="remname" editable="false" prefWidth="144.0" text="남은 객실 이름" />
                                                     <TableColumn fx:id="remroom" editable="false" prefWidth="100.0" text="남은 객실 수" />
