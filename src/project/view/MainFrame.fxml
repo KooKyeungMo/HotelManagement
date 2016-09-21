@@ -432,9 +432,9 @@
             </TabPane>
             <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0">
                 <children>
-                    <ImageView fitHeight="427.0" fitWidth="801.0" layoutX="65.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                    <ImageView fitHeight="633.0" fitWidth="965.0" layoutX="40.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                            <Image url="@../img/welcome.png" />
+                            <Image url="@../img/hotelview.jpg" />
                         </image>
                     </ImageView>
                 </children>
