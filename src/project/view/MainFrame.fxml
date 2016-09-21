@@ -83,7 +83,7 @@
 <center>
     <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <children>
-            <TabPane fx:id="customer" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+            <TabPane fx:id="customer" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
                 <tabs>
                     <Tab fx:id="me1" text="고객 관리">
                         <content>
@@ -97,7 +97,7 @@
                                     <Button layoutX="750.0" layoutY="72.0" mnemonicParsing="false" text="전체보기" />
                                     <Button layoutX="872.0" layoutY="72.0" mnemonicParsing="false" text="삭제" />
                                     <Button layoutX="823.0" layoutY="72.0" mnemonicParsing="false" text="수정" />
-                                    <TableView layoutX="86.0" layoutY="496.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
+                                    <TableView fx:id="utable" layoutX="86.0" layoutY="496.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
                                         <columns>
                                             <TableColumn prefWidth="48.0">
                                                 <graphic>
@@ -119,20 +119,20 @@
                                             <Font name="Consolas Bold" size="13.0" />
                                         </font>
                                     </Label>
-                                    <TableView layoutX="112.0" layoutY="102.0" prefHeight="211.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
+                                    <TableView fx:id="ctable" layoutX="112.0" layoutY="102.0" prefHeight="211.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
                                         <columns>
                                             <TableColumn prefWidth="48.0">
                                                 <graphic>
                                                     <CheckBox mnemonicParsing="false" />
                                                 </graphic>
                                             </TableColumn>
-                                            <TableColumn prefWidth="75.0" text="No" />
-                                            <TableColumn minWidth="95.0" prefWidth="92.0" text="이름" />
-                                            <TableColumn minWidth="95.0" prefWidth="85.0" text="아이디" />
-                                            <TableColumn prefWidth="85.0" text="생년월일" />
-                                            <TableColumn prefWidth="100.0" text="전화번호" />
-                                            <TableColumn prefWidth="220.0" text="email" />
-                                            <TableColumn minWidth="0.0" text="가입일" />
+                                            <TableColumn fx:id="cno" prefWidth="75.0" text="No" />
+                                            <TableColumn fx:id="name" minWidth="95.0" prefWidth="92.0" text="이름" />
+                                            <TableColumn fx:id="cid" minWidth="95.0" prefWidth="85.0" text="아이디" />
+                                            <TableColumn fx:id="birthday" prefWidth="85.0" text="생년월일" />
+                                            <TableColumn fx:id="phoneno" prefWidth="100.0" text="전화번호" />
+                                            <TableColumn fx:id="email" prefWidth="220.0" text="email" />
+                                            <TableColumn fx:id="cregdate" minWidth="0.0" text="가입일" />
                                         </columns>
                                     </TableView>
                                     <Label layoutX="112.0" layoutY="329.0" text="마일리지 정보">
@@ -140,7 +140,7 @@
                                             <Font name="Consolas Bold" size="13.0" />
                                         </font>
                                     </Label>
-                                    <TableView layoutX="112.0" layoutY="353.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
+                                    <TableView fx:id="mtable" layoutX="112.0" layoutY="353.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
                                         <columns>
                                             <TableColumn prefWidth="48.0">
                                                 <graphic>
@@ -431,7 +431,7 @@
                     </Tab>
                 </tabs>
             </TabPane>
-            <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0">
+            <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0" visible="false">
                 <children>
                     <ImageView fitHeight="427.0" fitWidth="801.0" layoutX="65.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
                         <image>
