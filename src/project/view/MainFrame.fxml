@@ -104,14 +104,12 @@
                                                     <CheckBox mnemonicParsing="false" />
                                                 </graphic>
                                             </TableColumn>
-                                            <TableColumn prefWidth="75.0" text="No" />
-                                            <TableColumn prefWidth="92.0" text="이름" />
-                                            <TableColumn prefWidth="120.0" text="예약 번호" />
-                                            <TableColumn prefWidth="95.0" text="예약일" />
-                                            <TableColumn prefWidth="95.0" text="기간" />
-                                            <TableColumn minWidth="0.0" prefWidth="85.0" text="객실명" />
-                                            <TableColumn prefWidth="95.0" text="이용객수" />
-                                            <TableColumn prefWidth="95.0" text="접수일자" />
+                                            <TableColumn fx:id="cno2" prefWidth="75.0" text="No" />
+                                            <TableColumn fx:id="name2" prefWidth="92.0" text="이름" />
+                                            <TableColumn fx:id="resno1" prefWidth="120.0" text="예약 번호" />
+                                            <TableColumn fx:id="room1" minWidth="0.0" prefWidth="85.0" text="객실명" />
+                                            <TableColumn fx:id="howPerson2" prefWidth="95.0" text="이용객수" />
+                                    <TableColumn fx:id="payMent2" prefWidth="95.0" text="결제현황" />
                                         </columns>
                                     </TableView>
                                     <Label layoutX="112.0" layoutY="470.0" text="이용 현황">
@@ -126,7 +124,7 @@
                                                     <CheckBox mnemonicParsing="false" />
                                                 </graphic>
                                             </TableColumn>
-                                            <TableColumn fx:id="cno" prefWidth="75.0" text="No" />
+                                            <TableColumn fx:id="no" prefWidth="75.0" text="No" />
                                             <TableColumn fx:id="name" minWidth="95.0" prefWidth="92.0" text="이름" />
                                             <TableColumn fx:id="cid" minWidth="95.0" prefWidth="85.0" text="아이디" />
                                             <TableColumn fx:id="birthday" prefWidth="85.0" text="생년월일" />
@@ -147,13 +145,13 @@
                                                     <CheckBox mnemonicParsing="false" />
                                                 </graphic>
                                             </TableColumn>
-                                            <TableColumn prefWidth="75.0" text="No" />
-                                            <TableColumn prefWidth="92.0" text="이름" />
-                                            <TableColumn text="등급" />
-                                            <TableColumn prefWidth="75.0" text="적립금" />
-                                            <TableColumn prefWidth="100.0" text="사용가능 적립금" />
-                                            <TableColumn prefWidth="100.0" text="소멸예정 적립금" />
-                                            <TableColumn prefWidth="120.0" text="소멸예정일" />
+                                            <TableColumn fx:id="cno1" prefWidth="75.0" text="No" />
+                                            <TableColumn fx:id="name1" prefWidth="92.0" text="이름" />
+                                            <TableColumn fx:id="level" text="등급" />
+                                            <TableColumn fx:id="mileage" prefWidth="75.0" text="적립금" />
+                                            <TableColumn fx:id="available" prefWidth="100.0" text="사용가능 적립금" />
+                                            <TableColumn fx:id="expire" prefWidth="100.0" text="소멸예정 적립금" />
+                                            <TableColumn fx:id="expiredate" prefWidth="120.0" text="소멸예정일" />
                                         </columns>
                                     </TableView>
                                     <TextField layoutX="470.0" layoutY="33.0" />
@@ -310,9 +308,9 @@
                                             <Insets />
                                         </opaqueInsets>
                                     </HBox>
-                                    <Pane layoutX="112.0" layoutY="34.0" prefHeight="330.0" prefWidth="800.0">
+                                    <Pane layoutX="62.0" layoutY="34.0" prefHeight="330.0" prefWidth="900.0">
                                         <children>
-                                            <TableView fx:id="reserv" prefHeight="330.0" prefWidth="800.0">
+                                            <TableView fx:id="reserv" prefHeight="330.0" prefWidth="900.0">
                                                 <columns>
                                                     <TableColumn fx:id="resno" text="예약 번호" />
                                                     <TableColumn fx:id="resname" text="예약 고객" />
@@ -321,6 +319,7 @@
                                                     <TableColumn fx:id="checkOut" prefWidth="150.0" text="체크 아웃" />
                                                     <TableColumn fx:id="payMent" prefWidth="100.0" text="결제 현황" />
                                                     <TableColumn fx:id="damDang" prefWidth="100.0" text="담당자" />
+                                          <TableColumn fx:id="howPerson" prefWidth="100.0" text="이용객수" />
                                                 </columns>
                                             </TableView>
                                         </children>

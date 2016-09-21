@@ -37,21 +37,21 @@ public class MainController implements Initializable {
 
 
     @FXML private TableView reserv;
-    @FXML private TableColumn resno,resname,resroom,checkIn,checkOut,payMent,damDang;
-    private ObservableList<dPdir> reslist = null;
+    @FXML private TableColumn resno,resname,resroom,checkIn,checkOut,payMent,damDang,howPerson;
+    private ObservableList<dPdir> reslist = FXCollections.observableArrayList();
 
 
     @FXML private TableView remainder;
     @FXML private TableColumn remname,remroom,person,Acreage,roomPay,damDang2;
-    private ObservableList<dPdir2> remlist = null;
+    private ObservableList<dPdir2> remlist = FXCollections.observableArrayList();
 
     @FXML private TableView rortlf;
     @FXML private TableColumn remno1,remname1,Acreage1,floor1,person1,lowson1,highson1,regdate1;
-    private ObservableList<Rortlf> rortlf1 = null;
+    private ObservableList<Rortlf> rortlf1 = FXCollections.observableArrayList();
 
     @FXML private TableView rortlfwhghl;
     @FXML private TableColumn remno2,remname2,Acreage2,floor2,person2,lowson2,highson2,regdate2;
-    private ObservableList<rortlfWhghl> rortlf2 = null;
+    private ObservableList<rortlfWhghl> rortlf2 = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -69,6 +69,7 @@ public class MainController implements Initializable {
             checkOut.setCellValueFactory(new PropertyValueFactory<dPdir, String>("checkOut"));
             payMent.setCellValueFactory(new PropertyValueFactory<dPdir, String>("payMent"));
             damDang.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang"));
+            howPerson.setCellValueFactory(new PropertyValueFactory<dPdir, String>("howPerson"));
         }
 
         {
@@ -80,10 +81,8 @@ public class MainController implements Initializable {
             damDang2.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang2"));
         }
 
-        reslist = FXCollections.observableArrayList();
-        reslist.add(new dPdir("1", "예약 고객", "예약된 방", "2016-09-21", "2016-09-25", "결제 진행중...", "최두현"));
+        reslist.add(new dPdir("1", "예약 고객", "예약된 방", "2016-09-21", "2016-09-25", "결제 진행중...", "최두현", "3명"));
 
-        remlist = FXCollections.observableArrayList();
         remlist.add(new dPdir2("남은 객실 이름", "20", "2~3명", "30평", "170,000원", "최두현"));
 
         reserv.setItems(reslist);
@@ -111,10 +110,8 @@ public class MainController implements Initializable {
             regdate2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("regdate2"));
         }
 
-        rortlf1 = FXCollections.observableArrayList();
         rortlf1.add(new Rortlf("1", "객실 이름", "객실 면적", "3층", "2~3명", "120,000원", "170,000원", "2016-09-21"));
 
-        rortlf2 = FXCollections.observableArrayList();
         rortlf2.add(new rortlfWhghl("1", "객실 이름", "객실 면적", "3층", "2~3명", "120,000원", "170,000원", "2016-09-21"));
 
         rortlf.setItems(rortlf1);
