@@ -177,14 +177,14 @@
                                 <children>
                                     <TableView layoutX="110.0" layoutY="126.0" prefHeight="400.0" prefWidth="800.0">
                                         <columns>
-                                            <TableColumn prefWidth="60.0" text="객실번호" />
-                                            <TableColumn prefWidth="118.0" text="객실이름" />
-                                            <TableColumn prefWidth="85.0" text="객실면적" />
-                                            <TableColumn prefWidth="49.0" text="층수" />
-                                            <TableColumn prefWidth="77.0" text="최대인원" />
-                                            <TableColumn prefWidth="145.0" text="비수기요금" />
-                                            <TableColumn prefWidth="155.0" text="성수기요금" />
-                                            <TableColumn prefWidth="109.0" text="등록일" />
+                                            <TableColumn fx:id="remno" prefWidth="60.0" text="객실번호" />
+                                            <TableColumn fx:id="remname" prefWidth="118.0" text="객실이름" />
+                                            <TableColumn fx:id="Acreage" prefWidth="85.0" text="객실면적" />
+                                            <TableColumn fx:id="floor" prefWidth="49.0" text="층수" />
+                                            <TableColumn fx:id="person" prefWidth="77.0" text="최대인원" />
+                                            <TableColumn fx:id="lowson" prefWidth="145.0" text="비수기요금" />
+                                            <TableColumn fx:id="highson" prefWidth="155.0" text="성수기요금" />
+                                            <TableColumn fx:id="regdate" prefWidth="109.0" text="등록일" />
                                         </columns>
                                     </TableView>
                                     <HBox alignment="CENTER" layoutX="730.0" layoutY="75.0" prefHeight="29.0" prefWidth="203.0" spacing="15.0">
@@ -227,14 +227,14 @@
                                     </HBox>
                                     <TableView layoutX="102.0" layoutY="137.0" prefHeight="259.0" prefWidth="800.0">
                                         <columns>
-                                            <TableColumn prefWidth="60.0" text="객실번호" />
-                                            <TableColumn prefWidth="118.0" text="객실이름" />
-                                            <TableColumn prefWidth="85.0" text="객실면적" />
-                                            <TableColumn prefWidth="49.0" text="층수" />
-                                            <TableColumn prefWidth="77.0" text="최대인원" />
-                                            <TableColumn prefWidth="145.0" text="비수기요금" />
-                                            <TableColumn prefWidth="155.0" text="성수기요금" />
-                                            <TableColumn prefWidth="109.0" text="등록일" />
+                                            <TableColumn fx:id="remno" prefWidth="60.0" text="객실번호" />
+                                            <TableColumn fx:id="remname" prefWidth="118.0" text="객실이름" />
+                                            <TableColumn fx:id="Acreage" prefWidth="85.0" text="객실면적" />
+                                            <TableColumn fx:id="floor" prefWidth="49.0" text="층수" />
+                                            <TableColumn fx:id="person" prefWidth="77.0" text="최대인원" />
+                                            <TableColumn fx:id="lowson" prefWidth="145.0" text="비수기요금" />
+                                            <TableColumn fx:id="highson" prefWidth="155.0" text="성수기요금" />
+                                            <TableColumn fx:id="regdate" prefWidth="109.0" text="등록일" />
                                         </columns>
                                     </TableView>
                                     <HBox layoutX="94.0" layoutY="417.0" prefHeight="139.0" prefWidth="832.0" spacing="10.0">
