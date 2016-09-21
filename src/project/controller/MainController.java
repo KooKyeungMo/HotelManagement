@@ -12,8 +12,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
-import project.model.dPdir;
-import project.model.rhror;
+import project.Model.*;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -44,7 +43,15 @@ public class MainController implements Initializable {
 
     @FXML private TableView remainder;
     @FXML private TableColumn remname,remroom,person,Acreage,roomPay,damDang2;
-    private ObservableList<rhror> remlist = null;
+    private ObservableList<dPdir2> remlist = null;
+
+    @FXML private TableView rortlf;
+    @FXML private TableColumn remno1,remname1,Acreage1,floor1,person1,lowson1,highson1,regdate1;
+    private ObservableList<Rortlf> rortlf1 = null;
+
+    @FXML private TableView rortlfwhghl;
+    @FXML private TableColumn remno2,remname2,Acreage2,floor2,person2,lowson2,highson2,regdate2;
+    private ObservableList<rortlfWhghl> rortlf2 = null;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -77,11 +84,43 @@ public class MainController implements Initializable {
         reslist.add(new dPdir("1", "예약 고객", "예약된 방", "2016-09-21", "2016-09-25", "결제 진행중...", "최두현"));
 
         remlist = FXCollections.observableArrayList();
-        remlist.add(new rhror("남은 객실 이름", "20", "2~3명", "30평", "170,000원", "최두현"));
+        remlist.add(new dPdir2("남은 객실 이름", "20", "2~3명", "30평", "170,000원", "최두현"));
 
-        reserv.setItems( reslist );
+        reserv.setItems(reslist);
         remainder.setItems(remlist);
+
+        {
+            remno1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("remno1"));
+            remname1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("remname1"));
+            Acreage1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("Acreage1"));
+            floor1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("floor1"));
+            person1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("person1"));
+            lowson1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("lowson1"));
+            highson1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("highson1"));
+            regdate1.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("regdate1"));
+        }
+
+        {
+            remno2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("remno2"));
+            remname2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("remname2"));
+            Acreage2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("Acreage2"));
+            floor2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("floor2"));
+            person2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("person2"));
+            lowson2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("lowson2"));
+            highson2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("highson2"));
+            regdate2.setCellValueFactory(new PropertyValueFactory<Rortlf, String>("regdate2"));
+        }
+
+        rortlf1 = FXCollections.observableArrayList();
+        rortlf1.add(new Rortlf("1", "객실 이름", "객실 면적", "3층", "2~3명", "120,000원", "170,000원", "2016-09-21"));
+
+        rortlf2 = FXCollections.observableArrayList();
+        rortlf2.add(new rortlfWhghl("1", "객실 이름", "객실 면적", "3층", "2~3명", "120,000원", "170,000원", "2016-09-21"));
+
+        rortlf.setItems(rortlf1);
+        rortlfwhghl.setItems(rortlf2);
     }
+
 
     public void setOnCustomer(Event event) {
         System.out.println("고객");

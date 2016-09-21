@@ -175,16 +175,16 @@
                         <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                 <children>
-                                    <TableView layoutX="110.0" layoutY="126.0" prefHeight="400.0" prefWidth="800.0">
+                                    <TableView fx:id="rortlf" layoutX="110.0" layoutY="126.0" prefHeight="400.0" prefWidth="800.0">
                                         <columns>
-                                            <TableColumn fx:id="remno" prefWidth="60.0" text="객실번호" />
-                                            <TableColumn fx:id="remname" prefWidth="118.0" text="객실이름" />
-                                            <TableColumn fx:id="Acreage" prefWidth="85.0" text="객실면적" />
-                                            <TableColumn fx:id="floor" prefWidth="49.0" text="층수" />
-                                            <TableColumn fx:id="person" prefWidth="77.0" text="최대인원" />
-                                            <TableColumn fx:id="lowson" prefWidth="145.0" text="비수기요금" />
-                                            <TableColumn fx:id="highson" prefWidth="155.0" text="성수기요금" />
-                                            <TableColumn fx:id="regdate" prefWidth="109.0" text="등록일" />
+                                            <TableColumn fx:id="remno1" prefWidth="60.0" text="객실번호" />
+                                            <TableColumn fx:id="remname1" prefWidth="118.0" text="객실이름" />
+                                            <TableColumn fx:id="Acreage1" prefWidth="85.0" text="객실면적" />
+                                            <TableColumn fx:id="floor1" prefWidth="49.0" text="층수" />
+                                            <TableColumn fx:id="person1" prefWidth="77.0" text="최대인원" />
+                                            <TableColumn fx:id="lowson1" prefWidth="145.0" text="비수기요금" />
+                                            <TableColumn fx:id="highson1" prefWidth="155.0" text="성수기요금" />
+                                            <TableColumn fx:id="regdate1" prefWidth="109.0" text="등록일" />
                                         </columns>
                                     </TableView>
                                     <HBox alignment="CENTER" layoutX="730.0" layoutY="75.0" prefHeight="29.0" prefWidth="203.0" spacing="15.0">
@@ -225,16 +225,16 @@
                                             <Button fx:id="find" mnemonicParsing="false" text="검색" />
                                         </children>
                                     </HBox>
-                                    <TableView layoutX="102.0" layoutY="137.0" prefHeight="259.0" prefWidth="800.0">
+                                    <TableView fx:id="rortlfwhghl" layoutX="102.0" layoutY="137.0" prefHeight="259.0" prefWidth="800.0">
                                         <columns>
-                                            <TableColumn fx:id="remno" prefWidth="60.0" text="객실번호" />
-                                            <TableColumn fx:id="remname" prefWidth="118.0" text="객실이름" />
-                                            <TableColumn fx:id="Acreage" prefWidth="85.0" text="객실면적" />
-                                            <TableColumn fx:id="floor" prefWidth="49.0" text="층수" />
-                                            <TableColumn fx:id="person" prefWidth="77.0" text="최대인원" />
-                                            <TableColumn fx:id="lowson" prefWidth="145.0" text="비수기요금" />
-                                            <TableColumn fx:id="highson" prefWidth="155.0" text="성수기요금" />
-                                            <TableColumn fx:id="regdate" prefWidth="109.0" text="등록일" />
+                                            <TableColumn fx:id="remno2" prefWidth="60.0" text="객실번호" />
+                                            <TableColumn fx:id="remname2" prefWidth="118.0" text="객실이름" />
+                                            <TableColumn fx:id="Acreage2" prefWidth="85.0" text="객실면적" />
+                                            <TableColumn fx:id="floor2" prefWidth="49.0" text="층수" />
+                                            <TableColumn fx:id="person2" prefWidth="77.0" text="최대인원" />
+                                            <TableColumn fx:id="lowson2" prefWidth="145.0" text="비수기요금" />
+                                            <TableColumn fx:id="highson2" prefWidth="155.0" text="성수기요금" />
+                                            <TableColumn fx:id="regdate2" prefWidth="109.0" text="등록일" />
                                         </columns>
                                     </TableView>
                                     <HBox layoutX="94.0" layoutY="417.0" prefHeight="139.0" prefWidth="832.0" spacing="10.0">
