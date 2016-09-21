@@ -312,15 +312,15 @@
                                      </HBox>
                                      <Pane layoutX="112.0" layoutY="34.0" prefHeight="330.0" prefWidth="800.0">
                                          <children>
-                                             <TableView prefHeight="330.0" prefWidth="800.0">
+                                             <TableView fx:id="reserv" prefHeight="330.0" prefWidth="800.0">
                                                  <columns>
-                                                     <TableColumn fx:id="regno" text="예약 번호" />
-                                                     <TableColumn text="예약 고객" />
-                                                     <TableColumn prefWidth="144.0" text="예약 완료 객실 이름" />
-                                                     <TableColumn prefWidth="100.0" text="체크 인" />
-                                                     <TableColumn prefWidth="100.0" text="체크 아웃" />
-                                                     <TableColumn prefWidth="100.0" text="결제 현황" />
-                                                     <TableColumn prefWidth="100.0" text="담당자" />
+                                                     <TableColumn fx:id="resno" text="예약 번호" />
+                                                     <TableColumn fx:id="resname" text="예약 고객" />
+                                                     <TableColumn fx:id="resroom" prefWidth="144.0" text="예약 완료 객실 이름" />
+                                                     <TableColumn fx:id="checkIn" prefWidth="150.0" text="체크 인" />
+                                                     <TableColumn fx:id="checkOut" prefWidth="150.0" text="체크 아웃" />
+                                                     <TableColumn fx:id="payMent" prefWidth="100.0" text="결제 현황" />
+                                                     <TableColumn fx:id="damDang" prefWidth="100.0" text="담당자" />
                                                  </columns>
                                              </TableView>
                                          </children>
@@ -329,12 +329,12 @@
                                          <children>
                                              <TableView prefHeight="300.0" prefWidth="700.0">
                                                  <columns>
-                                                     <TableColumn editable="false" prefWidth="144.0" text="남은 객실 이름" />
-                                                     <TableColumn editable="false" prefWidth="100.0" text="남은 객실 수" />
-                                                     <TableColumn editable="false" prefWidth="105.0" text="객실 적정 인원" />
-                                                     <TableColumn editable="false" prefWidth="120.0" text="객실 면적" />
-                                                     <TableColumn editable="false" prefWidth="120.0" text="객실 요금" />
-                                                     <TableColumn editable="false" prefWidth="110.0" text="담당자" />
+                                                     <TableColumn fx:id="remname" editable="false" prefWidth="144.0" text="남은 객실 이름" />
+                                                     <TableColumn fx:id="remroom" editable="false" prefWidth="100.0" text="남은 객실 수" />
+                                                     <TableColumn fx:id="person" editable="false" prefWidth="105.0" text="객실 적정 인원" />
+                                                     <TableColumn fx:id="Acreage" editable="false" prefWidth="120.0" text="객실 면적" />
+                                                     <TableColumn fx:id="roomPay" editable="false" prefWidth="120.0" text="객실 요금" />
+                                                     <TableColumn fx:id="damDang2" editable="false" prefWidth="110.0" text="담당자" />
                                                  </columns>
                                              </TableView>
                                          </children>
