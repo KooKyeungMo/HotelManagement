@@ -53,6 +53,18 @@ public class MainController implements Initializable {
     @FXML private TableColumn remno2,remname2,Acreage2,floor2,person2,lowson2,highson2,regdate2;
     private ObservableList<rortlfWhghl> rortlf2 = FXCollections.observableArrayList();
 
+    @FXML private TableView ctable;
+    @FXML private TableColumn no, name, cid, birthday, phoneno, email, cregdate;
+    private ObservableList<rhror> rhror = FXCollections.observableArrayList();
+
+    @FXML private TableView mtable;
+    @FXML private TableColumn cno1, name1, level, mileage, available, expire, expiredate;
+    private ObservableList<akdlfflwl> akdlfflwl = FXCollections.observableArrayList();
+
+    @FXML private TableView utable;
+    @FXML private TableColumn cno2, name2, resno1, room1, howPerson2, payMent2;
+    private ObservableList<dldydgusghkd> dldydgusghkd = FXCollections.observableArrayList();
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Calendar c = Calendar.getInstance();
@@ -116,6 +128,46 @@ public class MainController implements Initializable {
 
         rortlf.setItems(rortlf1);
         rortlfwhghl.setItems(rortlf2);
+
+        {
+            no.setCellValueFactory(new PropertyValueFactory<rhror, String>("no"));
+            name.setCellValueFactory(new PropertyValueFactory<rhror, String>("name"));
+            cid.setCellValueFactory(new PropertyValueFactory<rhror, String>("cid"));
+            birthday.setCellValueFactory(new PropertyValueFactory<rhror, String>("birthday"));
+            phoneno.setCellValueFactory(new PropertyValueFactory<rhror, String>("phoneno"));
+            email.setCellValueFactory(new PropertyValueFactory<rhror, String>("email"));
+            cregdate.setCellValueFactory(new PropertyValueFactory<rhror, String>("cregdate"));
+        }
+
+        {
+            cno1.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("cno1"));
+            name1.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("name1"));
+            level.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("level"));
+            mileage.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("mileage"));
+            available.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("available"));
+            expire.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("expire"));
+            expiredate.setCellValueFactory(new PropertyValueFactory<akdlfflwl, String>("expiredate"));
+        }
+
+        {
+            cno2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("cno2"));
+            name2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("name2"));
+            resno1.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("resno1"));
+            room1.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("room1"));
+            howPerson2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("howPerson2"));
+            payMent2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("payMent2"));
+        }
+
+        rhror.add(new rhror("1", "이름", "아이디", "생년월일", "전화번호", "이메일", "가입일"));
+
+        akdlfflwl.add(new akdlfflwl("1", "이름", "등급", "적립금", "사용가능 적립금", "소멸예정 적립금", "소멸예정일"));
+
+        dldydgusghkd.add(new dldydgusghkd("1", "이름", "예약번호", "객실명", "이용객수", "결제현황"));
+
+        ctable.setItems(rhror);
+        mtable.setItems(akdlfflwl);
+        utable.setItems(dldydgusghkd);
+
     }
 
 
