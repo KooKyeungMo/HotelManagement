@@ -13,15 +13,8 @@ public class dPdir {
     private SimpleStringProperty checkOut;
     private SimpleStringProperty payMent;
     private SimpleStringProperty damDang;
-    private SimpleStringProperty remname;
-    private SimpleStringProperty remroom;
-    private SimpleStringProperty person;
-    private SimpleStringProperty Acreage;
-    private SimpleStringProperty roomPay;
-    private SimpleStringProperty damDang2;
 
-    public dPdir(String resno, String resname, String resroom, String checkIn, String checkOut, String payMent, String damDang,
-    String remname, String remroom, String person, String Acreage, String roomPay, String damDang2){
+    public dPdir(String resno, String resname, String resroom, String checkIn, String checkOut, String payMent, String damDang){
         this.resno = new SimpleStringProperty(resno);
         this.resname = new SimpleStringProperty(resname);
         this.resroom = new SimpleStringProperty(resroom);
@@ -29,12 +22,6 @@ public class dPdir {
         this.checkOut = new SimpleStringProperty(checkOut);
         this.payMent = new SimpleStringProperty(payMent);
         this.damDang = new SimpleStringProperty(damDang);
-        this.remname = new SimpleStringProperty(remname);
-        this.remroom = new SimpleStringProperty(remroom);
-        this.person = new SimpleStringProperty(person);
-        this.Acreage = new SimpleStringProperty(Acreage);
-        this.roomPay = new SimpleStringProperty(roomPay);
-        this.damDang2 = new SimpleStringProperty(damDang2);
     }
     public String getResno() {
         return resno.get();
@@ -118,78 +105,6 @@ public class dPdir {
 
     public void setDamDang(String damDang) {
         this.damDang.set(damDang);
-    }
-
-    public String getRemname() {
-        return remname.get();
-    }
-
-    public SimpleStringProperty remnameProperty() {
-        return remname;
-    }
-
-    public void setRemname(String remname) {
-        this.remname.set(remname);
-    }
-
-    public String getRemroom() {
-        return remroom.get();
-    }
-
-    public SimpleStringProperty remroomProperty() {
-        return remroom;
-    }
-
-    public void setRemroom(String remroom) {
-        this.remroom.set(remroom);
-    }
-
-    public String getPerson() {
-        return person.get();
-    }
-
-    public SimpleStringProperty personProperty() {
-        return person;
-    }
-
-    public void setPerson(String person) {
-        this.person.set(person);
-    }
-
-    public String getAcreage() {
-        return Acreage.get();
-    }
-
-    public SimpleStringProperty acreageProperty() {
-        return Acreage;
-    }
-
-    public void setAcreage(String acreage) {
-        this.Acreage.set(acreage);
-    }
-
-    public String getRoomPay() {
-        return roomPay.get();
-    }
-
-    public SimpleStringProperty roomPayProperty() {
-        return roomPay;
-    }
-
-    public void setRoomPay(String roomPay) {
-        this.roomPay.set(roomPay);
-    }
-
-    public String getDamDang2() {
-        return damDang2.get();
-    }
-
-    public SimpleStringProperty damDang2Property() {
-        return damDang2;
-    }
-
-    public void setDamDang2(String damDang2) {
-        this.damDang2.set(damDang2);
     }
 }
 
