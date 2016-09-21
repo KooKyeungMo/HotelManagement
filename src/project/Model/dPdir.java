@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
  * Created by java on 2016-09-21.
  */
 public class dPdir {
+
     private SimpleStringProperty resno;
     private SimpleStringProperty resname;
     private SimpleStringProperty resroom;
