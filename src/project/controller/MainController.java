@@ -12,7 +12,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
-import project.Model.dPdir;
+import project.model.dPdir;
+import project.model.rhror;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -35,23 +36,15 @@ public class MainController implements Initializable {
     private int month;
     private int year;
 
-    @FXML private TableColumn resno;
-    @FXML private TableColumn resname;
-    @FXML private TableColumn resroom;
-    @FXML private TableColumn checkIn;
-    @FXML private TableColumn checkOut;
-    @FXML private TableColumn payMent;
-    @FXML private TableColumn damDang;
-    @FXML private TableColumn remname;
-    @FXML private TableColumn remroom;
-    @FXML private TableColumn person;
-    @FXML private TableColumn Acreage;
-    @FXML private TableColumn roomPay;
-    @FXML private TableColumn damDang2;
 
     @FXML private TableView reserv;
-
+    @FXML private TableColumn resno,resname,resroom,checkIn,checkOut,payMent,damDang;
     private ObservableList<dPdir> reslist = null;
+
+
+    @FXML private TableView remainder;
+    @FXML private TableColumn remname,remroom,person,Acreage,roomPay,damDang2;
+    private ObservableList<rhror> remlist = null;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -61,26 +54,33 @@ public class MainController implements Initializable {
         month =  c.get(Calendar.MONTH) + 1 ;
         day =  c.get(Calendar.DAY_OF_MONTH) ;
 
-        resno.setCellValueFactory(new PropertyValueFactory<dPdir, String>("resno"));
-        resname.setCellValueFactory(new PropertyValueFactory<dPdir, String>("resname"));
-        resroom.setCellValueFactory(new PropertyValueFactory<dPdir, String>("resroom"));
-        checkIn.setCellValueFactory(new PropertyValueFactory<dPdir, String>("checkIn"));
-        checkOut.setCellValueFactory(new PropertyValueFactory<dPdir, String>("checkOut"));
-        payMent.setCellValueFactory(new PropertyValueFactory<dPdir, String>("payMent"));
-        damDang.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang"));
+        {
+            resno.setCellValueFactory(new PropertyValueFactory<dPdir, String>("resno"));
+            resname.setCellValueFactory(new PropertyValueFactory<dPdir, String>("resname"));
+            resroom.setCellValueFactory(new PropertyValueFactory<dPdir, String>("resroom"));
+            checkIn.setCellValueFactory(new PropertyValueFactory<dPdir, String>("checkIn"));
+            checkOut.setCellValueFactory(new PropertyValueFactory<dPdir, String>("checkOut"));
+            payMent.setCellValueFactory(new PropertyValueFactory<dPdir, String>("payMent"));
+            damDang.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang"));
+        }
 
-        remname.setCellValueFactory(new PropertyValueFactory<dPdir, String>("remname"));
-        remroom.setCellValueFactory(new PropertyValueFactory<dPdir, String>("remroom"));
-        person.setCellValueFactory(new PropertyValueFactory<dPdir, String>("person"));
-        Acreage.setCellValueFactory(new PropertyValueFactory<dPdir, String>("Acreage"));
-        roomPay.setCellValueFactory(new PropertyValueFactory<dPdir, String>("roomPay"));
-        damDang2.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang2"));
+        {
+            remname.setCellValueFactory(new PropertyValueFactory<dPdir, String>("remname"));
+            remroom.setCellValueFactory(new PropertyValueFactory<dPdir, String>("remroom"));
+            person.setCellValueFactory(new PropertyValueFactory<dPdir, String>("person"));
+            Acreage.setCellValueFactory(new PropertyValueFactory<dPdir, String>("Acreage"));
+            roomPay.setCellValueFactory(new PropertyValueFactory<dPdir, String>("roomPay"));
+            damDang2.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang2"));
+        }
 
         reslist = FXCollections.observableArrayList();
-        reslist.add(new dPdir("1", "예약 고객", "예약된 방", "2016-09-21", "2016-09-25", "결제 진행중...", "최두현"
-                , "남은 객실 이름", "20", "2~3명", "30평", "170,000원", "최두현"));
+        reslist.add(new dPdir("1", "예약 고객", "예약된 방", "2016-09-21", "2016-09-25", "결제 진행중...", "최두현"));
+
+        remlist = FXCollections.observableArrayList();
+        remlist.add(new rhror("남은 객실 이름", "20", "2~3명", "30평", "170,000원", "최두현"));
 
         reserv.setItems( reslist );
+        remainder.setItems(remlist);
     }
 
     public void setOnCustomer(Event event) {
