@@ -27,7 +27,7 @@ public class LoginController implements Initializable {
 
     public void clickBtn(ActionEvent actionEvent) {
         try {
-            FXMLLoader main = new FXMLLoader(getClass().getResource("../view/MainFrame.fxml"));
+            FXMLLoader main = new FXMLLoader(getClass().getResource("/fxml/MainFrame.fxml"));
             Parent root_main = main.load();
 
             Stage stage = new Stage();

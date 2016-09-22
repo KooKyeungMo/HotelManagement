@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.RoomInfoController">
+    <children>
+        <ImageView fitHeight="168.0" fitWidth="300.0" layoutX="137.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../java/project/img/room.png" />
+            </image>
+        </ImageView>
+        <GridPane layoutX="42.0" layoutY="217.0" prefHeight="250.0" prefWidth="374.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="95.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="279.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="54.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="객실번호" textAlignment="CENTER">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="객실이름" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="객실면적" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="층수" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="최대인원" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="비수기요금" GridPane.rowIndex="5">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="성수기요금" GridPane.rowIndex="6">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label text="등록일" GridPane.rowIndex="7">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="rno" prefHeight="23.0" prefWidth="150.0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="rname" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="size" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="stair" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="person" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="max" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="min" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="regdate" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                    <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+            </children>
+        </GridPane>
+        <Button layoutX="396.0" layoutY="478.0" mnemonicParsing="false" text="닫기" />
+    </children>
+</AnchorPane>
