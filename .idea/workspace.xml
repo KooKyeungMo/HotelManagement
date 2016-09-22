@@ -2,125 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce618eb9-be19-46c1-ae7e-313b3f3d06c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/hotelview.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/images.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/images.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/images.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/people_thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/people_thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/people_thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/room.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/room.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/room.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/room1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/room1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/room1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/room2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/room2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/room2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/room3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/room3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/room3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/room4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/room4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/room4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/welcome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/welcome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/welcome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/다운로드 (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/다운로드 (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/다운로드 (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/다운로드.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/다운로드.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/다운로드.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/img/다운로드.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/img/다운로드.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/다운로드.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Cmodify.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/controller/CmodifyController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/HotelMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/HotelMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/controller/LoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/view/LoginFrame.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/view/MainFrame.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/css/MenuBar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/MenuBar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/css/MenuBar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/ResDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/RoomDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/controller/RoomMNGController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/RoomscDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/Rortlf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/akdlfflwl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/config.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/dPdir.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/dPdir2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/dldydgusghkd.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/project.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/view/registration.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/registration.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/rhror.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/roominfo.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/rortlfWhghl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/model/rptlvks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/sample.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\copyright\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\project.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\HotelMain.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\MenuBar.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\controller\LoginController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\controller\MainController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\home.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\hotelview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\images.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\people_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\room1.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\room2.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\room3.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\room4.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\welcome.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\다운로드 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\다운로드.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\img\다운로드.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\Rortlf.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\akdlfflwl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\dPdir.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\dPdir2.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\dldydgusghkd.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\rhror.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\model\rortlfWhghl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\view\LoginFrame.fxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\view\MainFrame.fxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\newOne\HotelManagement\src\project\view\registration.fxml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelManagement.iml" afterPath="$PROJECT_DIR$/HotelManagement.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HotelManagement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,8 +41,8 @@
       <file leaf-file-name="MenuBar.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/css/MenuBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.061452515">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -236,6 +120,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="HotelManagement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -337,6 +225,12 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="C:/Java/JDBC/ojdbc7.jar!/" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -556,12 +450,19 @@
       <created>1474531289449</created>
       <option name="number" value="Default" />
       <updated>1474531289449</updated>
-      <workItem from="1474531290121" duration="56000" />
+      <workItem from="1474531290121" duration="153000" />
     </task>
+    <task id="LOCAL-00001" summary="javafx maven">
+      <created>1474531363450</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474531363450</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56000" />
+    <option name="totallyTimeSpent" value="153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
@@ -569,6 +470,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -595,6 +497,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="javafx maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="javafx maven" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -610,11 +516,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/css/MenuBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.061452515">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>HotelManagement</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ojdbc7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
