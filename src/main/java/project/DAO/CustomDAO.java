@@ -1,6 +1,7 @@
 package project.DAO;
 
 import project.model.akdlfflwl;
+import project.model.dldydgusghkd;
 import project.model.rhror;
 
 import java.sql.Connection;
@@ -20,6 +21,7 @@ public class CustomDAO {
     private static String URL = "jdbc:oracle:thin:@//192.168.0.35:1521/xe";
     private static String USR = "YEAAAH";
     private static String PWD = "YEAAAH";
+    private static String uviewCustom = " select c.cno, c.cname, r.resid, o.rname, r.howperson, r.payment from customer c join reservation r on (c.cno=r.cno) join room o on (r.roomid=o.roomid) AND c.cno=? ";
 
 
     // SQL 질의문
@@ -84,6 +86,35 @@ public class CustomDAO {
 
     }
 
+    public static List<dldydgusghkd> uviewCustome(String cno) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        List<dldydgusghkd> result = new ArrayList<>();
+
+        try{
+            conn = openConn();
+
+            pstmt = conn.prepareStatement(uviewCustom);
+            pstmt.setString(1,cno);
+            rs=pstmt.executeQuery();
+
+            while(rs.next()){
+                dldydgusghkd tmp = new dldydgusghkd(rs.getString("cno"),rs.getString("cname"),
+                        rs.getString("resid"),rs.getString("rname"),rs.getString("howperson"),
+                        rs.getString("payment"));
+
+                result.add(tmp);
+            }
+
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }finally {
+            closeConn(conn,pstmt,rs);
+        }
+
+        return result;
+    }
 
     //고객 목록 보기
     public  static List<rhror> listCustom(){

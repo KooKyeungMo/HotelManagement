@@ -99,12 +99,12 @@
                                         <Button layoutX="823.0" layoutY="72.0" mnemonicParsing="false" onAction="#modify" text="수정" />
                                         <TableView fx:id="utable" layoutX="86.0" layoutY="496.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="112.0">
                                             <columns>
-                                                <TableColumn fx:id="cno" prefWidth="75.0" text="No" />
-                                                <TableColumn fx:id="name" prefWidth="92.0" text="이름" />
-                                                <TableColumn fx:id="regno" prefWidth="130.0" text="예약 번호" />
-                                                <TableColumn minWidth="0.0" prefWidth="100.0" text="객실명" />
-                                                <TableColumn prefWidth="100.0" text="이용객수" />
-                                                <TableColumn prefWidth="100.0" text="결제현황" />
+                                                <TableColumn fx:id="cno2" prefWidth="75.0" text="No" />
+                                                <TableColumn fx:id="name2" prefWidth="92.0" text="이름" />
+                                                <TableColumn fx:id="resno1" prefWidth="130.0" text="예약 번호" />
+                                                <TableColumn fx:id="room1" minWidth="0.0" prefWidth="100.0" text="객실명" />
+                                                <TableColumn fx:id="howPerson2" prefWidth="100.0" text="이용객수" />
+                                                <TableColumn fx:id="PayMent2" prefWidth="100.0" text="결제현황" />
                                             </columns>
                                         </TableView>
                                         <Label layoutX="112.0" layoutY="470.0" text="이용 현황">
@@ -141,7 +141,7 @@
                                         </TableView>
                                         <TextField fx:id="input" layoutX="470.0" layoutY="33.0" />
                                         <Button layoutX="614.0" layoutY="33.0" mnemonicParsing="false" onAction="#search" text="검색" />
-                                        <ComboBox fx:id="combo" layoutX="351.0" layoutY="33.0" prefHeight="23.0" prefWidth="110.0" />
+                                        <ComboBox fx:id="combo" layoutX="351.0" layoutY="33.0" prefHeight="23.0" prefWidth="110.0" promptText="조건 선택"/>
 
                                         <Label layoutX="112.0" layoutY="75.0" text="고객 정보">
                                             <font>
@@ -200,7 +200,7 @@
                                                     <font>
                                                         <Font size="13.0" />
                                                     </font></Label>
-                                                <ComboBox fx:id="combo2" prefWidth="150.0" />
+                                                <ComboBox fx:id="combo2" prefWidth="150.0" promptText="조건 선택"/>
                                             </children>
                                         </HBox>
                                         <HBox layoutX="512.0" layoutY="88.0" prefHeight="20.0" prefWidth="236.0" spacing="5.0">

@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 import project.DAO.CustomDAO;
 import project.model.rhror;
 
@@ -63,8 +64,8 @@ public class CmodifyController {
     public void cancel(ActionEvent event) {
 
 
-
-       // Platform.exit();
-
+        Stage thisOne = (Stage) cancelbtn.getScene().getWindow();
+        thisOne.close();
     }
+
 }

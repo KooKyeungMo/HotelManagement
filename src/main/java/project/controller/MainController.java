@@ -167,6 +167,15 @@ public class MainController implements Initializable {
             bdread.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bdread"));
 
         }
+        {
+            cno2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("cno2"));
+            name2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("name2"));
+            resno1.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("resno1"));
+            room1.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("room1"));
+            howPerson2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("howPerson2"));
+            PayMent2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("payMent2"));
+
+        }
         rptlvka1 = FXCollections.observableArrayList();
         rptlvka1.add(new rptlvks("공지","특가 행사 예약","","관리자","2016-09-21", "2" ));
         rptlvka1.add(new rptlvks("101","예약문의","","고객님","2016-09-22", "3" ));
@@ -175,6 +184,7 @@ public class MainController implements Initializable {
 
         ObservableList<String> comboList = FXCollections.observableArrayList("이름","아이디","전화번호");
         combo.setItems(comboList);
+
 
         ObservableList<String> combo2List = FXCollections.observableArrayList("이름","층수","최대인원");
         combo2.setItems(combo2List);
@@ -513,11 +523,16 @@ public class MainController implements Initializable {
         String cno = clist.get(tmp).getNo();
 
         List<akdlfflwl> bds = (List<akdlfflwl>) CustomDAO.mviewCustom(cno);
-
         mlist.clear();
         for (akdlfflwl mc : bds)
             mlist.add(mc);
         mtable.setItems(mlist);
+
+        List<dldydgusghkd> bd =(List<dldydgusghkd>)CustomDAO.uviewCustome(cno);
+        ulist.clear();
+        for(dldydgusghkd uc : bd)
+            ulist.add(uc);
+        utable.setItems(ulist);
 
     }
 
