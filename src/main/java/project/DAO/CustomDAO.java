@@ -34,6 +34,7 @@ public class CustomDAO {
     private final static String searchCustom2 = "select * from CUSTOMER where cusid = ? ";
     private final static String searchCustom3 = "select * from CUSTOMER where pnum = ? ";
     private static String mviewCustom = " select cno, cname, grade, mileage, mileage, dis_mileage, dis_date from CUSTOMER where cno = ? " ;
+    private static String schCNO = "select * from customer where cname = ?" ;
     //private static String lastOne =" select cno,cname,CUSID,birthday,pnum,email,regdate from CUSTOMER" +
     //        " where cno =(select max(cno) from CUSTOMER) ";
 
@@ -256,6 +257,31 @@ public class CustomDAO {
 
 
 
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }finally {
+            closeConn(conn,pstmt,rs);
+        }
+
+        return result;
+    }
+
+    public static String searchCno(String cname){
+        //데이터베이스 관련 변수
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String result = "";
+
+        try{
+            conn = openConn();
+
+            pstmt = conn.prepareStatement(schCNO);
+            pstmt.setString(1,cname);
+            rs=pstmt.executeQuery();
+
+            rs.next();
+            result = rs.getString("CNO");
         }catch (Exception ex){
             ex.printStackTrace();
         }finally {

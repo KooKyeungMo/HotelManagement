@@ -1,9 +1,11 @@
 package project.controller;
 
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import project.DAO.RoomDAO;
 import project.model.Rortlf;
 import project.model.rortlfWhghl;
@@ -43,5 +45,10 @@ public class RoomInfoController implements Initializable {
         max.setText(tmp.getHighson2());
         min.setText(tmp.getLowson2());
         regdate.setText(tmp.getRegdate2().substring(0,10));
+    }
+
+    public void closeRegWindow(ActionEvent actionEvent) {
+        Stage prev = (Stage)rno.getScene().getWindow();
+        prev.close();
     }
 }

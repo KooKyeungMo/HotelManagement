@@ -31,11 +31,11 @@ import java.util.ResourceBundle;
  */
 public class MainController implements Initializable {
     @FXML
-    ComboBox combo,combo2;
+    ComboBox combo,combo2,combo3;
     @FXML
     TextField input,input2;
     @FXML
-    TabPane customer,room,reservation,board,stats;
+    TabPane customer,room,reservation,board;
     @FXML
     Pane welcome;
     @FXML
@@ -85,7 +85,6 @@ public class MainController implements Initializable {
     @FXML private TableColumn bdno, bdtitle, bdsub, bdname, bddate, bdread;
     private ObservableList<rptlvks> rptlvka1 = null;
     //bdlist
-    public static int ccnt = 0;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -188,15 +187,16 @@ public class MainController implements Initializable {
 
         ObservableList<String> combo2List = FXCollections.observableArrayList("이름","층수","최대인원");
         combo2.setItems(combo2List);
+
+        ObservableList<String> combo3List = FXCollections.observableArrayList("작성자","제목");
+        combo3.setItems(combo3List);
     }
 
     public void setOnCustomer(Event event) {
-        System.out.println("고객");
         customer.setVisible(true);
         room.setVisible(false);
         reservation.setVisible(false);
         board.setVisible(false);
-        stats.setVisible(false);
         welcome.setVisible(false);
 
         List<rhror> cs = CustomDAO.listCustom();
@@ -211,28 +211,39 @@ public class MainController implements Initializable {
 
     public void setOnCustomer(String cname) {
         List<rhror> cs = CustomDAO.viewsearchCustom("이름", cname);
-
         clist.clear();
         for(rhror m:cs){
             clist.add(m);
         }
+
+        String cno = CustomDAO.searchCno(cname);
+
         ctable.setItems(clist);
+        List<akdlfflwl> bds = (List<akdlfflwl>) CustomDAO.mviewCustom(cno);
+        mlist.clear();
+        for (akdlfflwl mc : bds)
+            mlist.add(mc);
+        mtable.setItems(mlist);
+
+        List<dldydgusghkd> bd =(List<dldydgusghkd>)CustomDAO.uviewCustome(cno);
+        ulist.clear();
+        for(dldydgusghkd uc : bd)
+            ulist.add(uc);
+        utable.setItems(ulist);
+
 
         customer.setVisible(true);
         room.setVisible(false);
         reservation.setVisible(false);
         board.setVisible(false);
-        stats.setVisible(false);
         welcome.setVisible(false);
     }
 
     public void setOnRoom(Event event) {
-        System.out.println("객실");
         customer.setVisible(false);
         room.setVisible(true);
         reservation.setVisible(false);
         board.setVisible(false);
-        stats.setVisible(false);
         welcome.setVisible(false);
 
         List<Rortlf> bds = RoomDAO.viewRoomInfo();
@@ -253,12 +264,10 @@ public class MainController implements Initializable {
     }
 
     public void setOnReservation(Event event) {
-        System.out.println("예약");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(true);
         board.setVisible(false);
-        stats.setVisible(false);
         welcome.setVisible(false);
 
         List<dPdir> bds = ResDAO.viewReslist();
@@ -270,31 +279,18 @@ public class MainController implements Initializable {
     }
 
     public void setOnBoard(Event event) {
-        System.out.println("게시판");
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);
         board.setVisible(true);
-        stats.setVisible(false);
         welcome.setVisible(false);
     }
 
-    public void setOnStats(Event event) {
-        System.out.println("통계");
+        public void clickHome(Event event) {
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);
         board.setVisible(false);
-        stats.setVisible(true);
-        welcome.setVisible(false);
-    }
-
-    public void clickHome(Event event) {
-        customer.setVisible(false);
-        room.setVisible(false);
-        reservation.setVisible(false);
-        board.setVisible(false);
-        stats.setVisible(false);
         welcome.setVisible(true);
     }
 
@@ -421,8 +417,11 @@ public class MainController implements Initializable {
                 clist.add(tmp);
             ctable.setItems(clist);
 
+            mlist.clear();
+            mtable.setItems(mlist);
 
-
+            ulist.clear();
+            utable.setItems(ulist);
         }
     }
 
@@ -517,8 +516,6 @@ public class MainController implements Initializable {
 
 
     public void click(MouseEvent event) {
-        System.out.println("click");
-
         int tmp = ctable.getSelectionModel().getSelectedIndex();
         String cno = clist.get(tmp).getNo();
 
@@ -543,8 +540,9 @@ public class MainController implements Initializable {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/roominfo.fxml"));
             Parent root = loader.load();
+
             RoomInfoController roomctl = loader.getController();
-            roomctl.sendData( tmp.getRemno2());
+            roomctl.sendData(tmp.getRemno2());
 
             Stage prev = (Stage)rortlfwhghl.getScene().getWindow();
 
@@ -586,9 +584,6 @@ public class MainController implements Initializable {
             for (rortlfWhghl ror : bds)
                 rortlf2.add(ror);
             rortlfwhghl.setItems(rortlf2);
-
-            System.out.println(bds.size()+"/"+rortlf2.size());
-
-        }
+       }
     }
 }
