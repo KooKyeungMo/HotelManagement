@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce618eb9-be19-46c1-ae7e-313b3f3d06c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/LoginDAO.java" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\home.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\hotelview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\images.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\people_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\room.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\room1.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\room2.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\room3.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\room4.JPG" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\welcome.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\다운로드 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\다운로드.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\img\다운로드.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\view\LoginFrame.fxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\view\MainFrame.fxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\HotelManagement\src\main\java\project\view\registration.fxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/project/controller/LoginController.java" />
+    <list default="true" id="ce618eb9-be19-46c1-ae7e-313b3f3d06c1" name="Default" comment="게시판 틀수정&#10;통계 탭 삭제&#10;로그인 기능 추가">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/loginview.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/board.png" afterPath="$PROJECT_DIR$/src/main/resources/img/board.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/customer.png" afterPath="$PROJECT_DIR$/src/main/resources/img/customer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/home.png" afterPath="$PROJECT_DIR$/src/main/resources/img/home.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/resvervation.png" afterPath="$PROJECT_DIR$/src/main/resources/img/resvervation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/img/room.png" afterPath="$PROJECT_DIR$/src/main/resources/img/room.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/roominfo.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/roominfo.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HotelManagement.iws" />
@@ -54,21 +38,8 @@
       <file leaf-file-name="MainFrame.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6666665">
-              <caret line="348" column="61" selection-start-line="348" selection-start-column="61" selection-end-line="348" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roominfo.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/roominfo.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.633333">
-              <caret line="114" column="91" selection-start-line="114" selection-start-column="91" selection-end-line="114" selection-end-column="91" />
+            <state vertical-scroll-proportion="-95.333336">
+              <caret line="333" column="42" selection-start-line="333" selection-start-column="42" selection-end-line="333" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -87,23 +58,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuBar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/css/MenuBar.css">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state vertical-scroll-proportion="1.1091617">
+              <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57309943">
-              <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="HotelView.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img/HotelView.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img/home.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -123,8 +98,8 @@
       <file leaf-file-name="LoginFrame.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6666665">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state vertical-scroll-proportion="-9.566667">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -136,8 +111,8 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9491525">
-              <caret line="61" column="20" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="20" />
+            <state vertical-scroll-proportion="-2.559322">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -201,7 +176,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/css/MenuBar.css" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/CmodifyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java" />
@@ -209,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/main/java/project/DAO/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" />
       </list>
     </option>
@@ -280,6 +255,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HotelManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -592,7 +581,7 @@
       <option name="number" value="Default" />
       <updated>1474531289449</updated>
       <workItem from="1474531290121" duration="153000" />
-      <workItem from="1474531785142" duration="5628000" />
+      <workItem from="1474531785142" duration="6716000" />
     </task>
     <task id="LOCAL-00001" summary="javafx maven">
       <created>1474531363450</created>
@@ -612,11 +601,17 @@
       <option name="project" value="LOCAL" />
       <updated>1474533831641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="게시판 틀수정&#10;통계 탭 삭제&#10;로그인 기능 추가">
+      <created>1474537581160</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1474537581160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5781000" />
+    <option name="totallyTimeSpent" value="6869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -624,7 +619,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -681,7 +676,8 @@
     <MESSAGE value="javafx maven" />
     <MESSAGE value="IMG path setting" />
     <MESSAGE value="고객 객실 예약 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="고객 객실 예약 완료" />
+    <MESSAGE value="게시판 틀수정&#10;통계 탭 삭제&#10;로그인 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="게시판 틀수정&#10;통계 탭 삭제&#10;로그인 기능 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -722,11 +718,6 @@
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/home.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/customer.png">
@@ -821,18 +812,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/HotelView.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/home.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9491525">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="20" />
+        <state vertical-scroll-proportion="-2.559322">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/LoginFrame.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state vertical-scroll-proportion="-9.566667">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -842,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665">
-          <caret line="348" column="61" selection-start-line="348" selection-start-column="61" selection-end-line="348" selection-end-column="61" />
+        <state vertical-scroll-proportion="-95.333336">
+          <caret line="333" column="42" selection-start-line="333" selection-start-column="42" selection-end-line="333" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -853,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57309943">
-          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1091617">
+          <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="12" />
           <folding />
         </state>
       </provider>

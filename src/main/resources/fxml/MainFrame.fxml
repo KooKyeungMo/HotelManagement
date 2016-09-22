@@ -12,20 +12,27 @@
     <bottom>
         <Pane prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="747.0" layoutY="5.0" prefHeight="33.0" prefWidth="254.0" text="Label" />
+            <Label fx:id="timebar" layoutX="732.0" layoutY="3.0" prefHeight="33.0" prefWidth="270.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
          </children></Pane>
     </bottom>
     <top>
         <HBox prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #CCCCCC;" stylesheets="@/css/MenuBar.css" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="30.0" fitWidth="45.0" onMouseClicked="#clickHome" pickOnBounds="true" preserveRatio="true" styleClass="home">
-                    <image>
-                        <Image url="@../img/home.png" />
-                    </image>
-                    <HBox.margin>
-                        <Insets left="10.0" />
-                    </HBox.margin>
-                </ImageView>
+            <Label onMouseClicked="#clickHome" prefHeight="30.0" styleClass="menubar" stylesheets="@/css/MenuBar.css" text="H O M E">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="\\img\home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
                 <Label onMouseClicked="#setOnCustomer" prefHeight="30.0" styleClass="menubar" stylesheets="@/css/MenuBar.css" text="  고객 정보  ">
                     <HBox.margin>
                         <Insets left="10.0" right="20.0" />

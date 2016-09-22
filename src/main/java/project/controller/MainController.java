@@ -1,5 +1,6 @@
 package project.controller;
 
+import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,6 +21,7 @@ import project.DAO.*;
 import project.model.*;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
@@ -40,11 +42,12 @@ public class MainController implements Initializable {
     Pane welcome;
     @FXML
     Button change;
-    @FXML DatePicker first;
-    @FXML DatePicker second;
-    private int day;
-    private int month;
-    private int year;
+    @FXML
+    DatePicker first,second;
+    @FXML
+    Label timebar;
+
+    private int day,month,year;
 
     @FXML
     TableView utable,ctable,mtable;
@@ -94,8 +97,25 @@ public class MainController implements Initializable {
         month =  c.get(Calendar.MONTH) + 1 ;
         day =  c.get(Calendar.DAY_OF_MONTH) ;
 
+        Thread task = new Thread(() -> {
+            SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd a HH:mm:ss");
 
+            while (true) {
+                String strTime = sdf.format(new Date());
+                Platform.runLater(() -> {
+                    timebar.setText(strTime);
+                });
 
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        task.setDaemon(true);
+        task.start();
 
         {
             no.setCellValueFactory(new PropertyValueFactory<rhror, String>("no"));
