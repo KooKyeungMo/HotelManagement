@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.BoardController">
+   <children>
+      <Label layoutX="47.0" layoutY="39.0" prefHeight="30.0" prefWidth="49.0" text="작성자" />
+      <TextArea fx:id="con" layoutX="33.0" layoutY="70.0" prefHeight="275.0" prefWidth="535.0" />
+      <Label layoutX="341.0" layoutY="40.0" prefHeight="30.0" prefWidth="49.0" text="작성일" />
+      <Label layoutX="47.0" layoutY="3.0" prefHeight="30.0" prefWidth="49.0" text="제 목" textAlignment="CENTER" />
+      <TextField fx:id="tit" layoutX="102.0" layoutY="7.0" prefHeight="23.0" prefWidth="415.0" />
+      <TextField fx:id="wri" layoutX="102.0" layoutY="43.0" prefHeight="23.0" prefWidth="92.0" />
+      <TextField fx:id="date" layoutX="390.0" layoutY="44.0" prefHeight="23.0" prefWidth="124.0" />
+      <TextField fx:id="rea" layoutX="251.0" layoutY="44.0" prefHeight="23.0" prefWidth="68.0" />
+      <Label layoutX="202.0" layoutY="40.0" prefHeight="30.0" prefWidth="49.0" text="조회수" />
+      <Button fx:id="clo" layoutX="528.0" layoutY="463.0" mnemonicParsing="false" onAction="#closeBoard" text="닫기" />
+      <AnchorPane layoutX="33.0" layoutY="354.0" prefHeight="104.0" prefWidth="535.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="2.0" prefHeight="23.0" prefWidth="92.0" text="      Commet" textAlignment="CENTER" />
+            <TextArea fx:id="com" layoutX="14.0" layoutY="26.0" prefHeight="69.0" prefWidth="511.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="modd" layoutX="446.0" layoutY="463.0" mnemonicParsing="false" onAction="#clickComment" text="댓글 수정" />
+   </children>
+</AnchorPane>

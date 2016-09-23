@@ -26,15 +26,15 @@ public class CustomDAO {
 
     // SQL 질의문
     private static String newCustom=" insert into CUSTOMER (cno,cname,CUSID,birthday,pnum,email) values(?,?,?,?,?) ";
-    private static String listCustom = " select cno,cname,CUSID,birthday,pnum,email,regdate from CUSTOMER ORDER by cno DESC ";
-    private static String viewCustom = " select * from CUSTOMER where cno = ? " ;
+    private static String listCustom = " select cno,cname,CUSID,birthday,pnum,email,regdate from CUSTOMER ORDER by cname ASC ";
+    private static String viewCustom = " select * from CUSTOMER where cno = ? ORDER by cname ASC" ;
     private static String deleteCustom = " delete from CUSTOMER where cno = ? ";
     private static String updateCustom = " update CUSTOMER set cname = ?, birthday = to_date(?,'YYYY-MM-DD HH24:MI:SS'), pnum = ?, email = ?, regdate = sysdate where cno=?";
     private final static String searchCustom1 = "select * from CUSTOMER where cname = ? ";
     private final static String searchCustom2 = "select * from CUSTOMER where cusid = ? ";
     private final static String searchCustom3 = "select * from CUSTOMER where pnum = ? ";
     private static String mviewCustom = " select cno, cname, grade, mileage, mileage, dis_mileage, dis_date from CUSTOMER where cno = ? " ;
-    private static String schCNO = "select * from customer where cname = ?" ;
+    private static String schCNO = "select * from customer where cname = ? ORDER by cname ASC" ;
     //private static String lastOne =" select cno,cname,CUSID,birthday,pnum,email,regdate from CUSTOMER" +
     //        " where cno =(select max(cno) from CUSTOMER) ";
 

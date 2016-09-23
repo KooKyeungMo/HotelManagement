@@ -35,7 +35,7 @@ public class MainController implements Initializable {
     @FXML
     ComboBox combo,combo2,combo3;
     @FXML
-    TextField input,input2;
+    TextField input,input2,binput;
     @FXML
     TabPane customer,room,reservation,board;
     @FXML
@@ -65,7 +65,7 @@ public class MainController implements Initializable {
 
     //예약약
    @FXML private TableView reserv;
-    @FXML private TableColumn resno,resname,resroom,checkIn,checkOut,payMent,damDang;
+    @FXML private TableColumn resno,resname,resroom,checkIn,checkOut,payMent,damDang,howPerson;
     private ObservableList<dPdir> reslist = FXCollections.observableArrayList();
 
     //남으방
@@ -144,6 +144,7 @@ public class MainController implements Initializable {
             checkOut.setCellValueFactory(new PropertyValueFactory<dPdir, String>("checkOut"));
             payMent.setCellValueFactory(new PropertyValueFactory<dPdir, String>("payMent"));
             damDang.setCellValueFactory(new PropertyValueFactory<dPdir, String>("damDang"));
+            howPerson.setCellValueFactory(new PropertyValueFactory<dPdir, String>("howPerson"));
         }
 
         {
@@ -457,6 +458,13 @@ public class MainController implements Initializable {
             clist.add(tmp);
         ctable.setItems(clist);
 
+        mlist.clear();
+        mtable.setItems(mlist);
+
+        ulist.clear();
+        utable.setItems(ulist);
+
+
     }
 
     public void delete(ActionEvent event) {
@@ -488,38 +496,6 @@ public class MainController implements Initializable {
     }
 
     public void modify(ActionEvent event) throws Exception{
-
-
-        /*if (ctable.) {
-            Alert confirm = new Alert(Alert.AlertType.INFORMATION);
-            confirm.setTitle("고객 수정");
-            confirm.setHeaderText(null);
-            confirm.setContentText("수정할 내역을 선택하세요!!!");
-            ButtonType nobtn = new ButtonType("확 인", ButtonBar.ButtonData.CANCEL_CLOSE);
-            confirm.getButtonTypes().setAll(nobtn);
-
-            String text = confirm.showAndWait().get().getText();
-
-            if (text.equals("확 인"))
-                nobtn = ButtonType.CANCEL;
-        } else {
-            int num = ctable.getSelectionModel().getSelectedIndex();
-
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Cmodify.fxml"));
-            Parent root = loader.load();
-
-            CmodifyController c = loader.getController();
-            c.sendData(clist, num);
-
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.setTitle("고객정보 수정하기");
-
-            stage.show();
-
-        }
-*/
-
         int num = ctable.getSelectionModel().getSelectedIndex();
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Cmodify.fxml"));
@@ -610,10 +586,67 @@ public class MainController implements Initializable {
        }
     }
 
-    public void clickBoard(MouseEvent event) {
+    public void clickBoard(MouseEvent event) throws Exception{
         if(event.getClickCount()==2) {
             rptlvks tmp = (rptlvks)rptlvks.getSelectionModel().getSelectedItem();
-            System.out.println(tmp.getBdtitle());
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/viewBoard.fxml"));
+            Parent root = loader.load();
+
+            BoardController bctl = loader.getController();
+            bctl.sendBdno(tmp.getBdno());
+
+            Stage prev = (Stage)rptlvks.getScene().getWindow();
+
+            Stage stage = new Stage();
+            stage.setTitle(tmp.getBdtitle());
+            stage.setScene(new Scene(root));
+            stage.setResizable(false);
+            stage.centerOnScreen();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(prev);
+            stage.show();
+
+            tmp.setBdread(String.valueOf(Integer.parseInt(tmp.getBdread())+1));
         }
+    }
+
+    public void bsearch(ActionEvent event) {
+        TextField searchText = new TextField();
+        searchText.getText();
+
+        if (combo3.getValue() == null || binput.getText() == null) {
+            Alert confirm = new Alert(Alert.AlertType.INFORMATION);
+            confirm.setTitle("게시판 검색");
+            confirm.setHeaderText(null);
+            confirm.setContentText("검색어를 입력하세요");
+            ButtonType nobtn = new ButtonType("확 인", ButtonBar.ButtonData.CANCEL_CLOSE);
+            confirm.getButtonTypes().setAll(nobtn);
+
+            String text = confirm.showAndWait().get().getText();
+
+            if (text.equals("확 인"))
+                nobtn = ButtonType.CANCEL;
+        } else {
+            String cb = combo3.getValue().toString();
+            String ip = binput.getText().toString();
+
+            List<rptlvks> bds = BoardDAO.viewsearchBd(cb, ip);
+
+            rptlvka1.clear();
+            for (rptlvks tmp : bds)
+                rptlvka1.add(tmp);
+            ctable.setItems(rptlvka1);
+
+        }
+    }
+
+    public void tbview(ActionEvent event) {
+        List<rptlvks> bds = BoardDAO.viewBoard();
+
+        rptlvka1.clear();
+        for (rptlvks tmp : bds)
+            rptlvka1.add(tmp);
+        rptlvks.setItems(rptlvka1);
     }
 }

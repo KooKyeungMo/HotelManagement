@@ -25,7 +25,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="\\img\home.png" />
+                        <Image url="/img/home.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -357,8 +357,13 @@
                                                 <Insets right="25.0" />
                                              </HBox.margin>
                                           </ComboBox>
-                                                        <TextField />
-                                                        <Button mnemonicParsing="false" text="검색" />
+                                                        <TextField fx:id="binput" />
+                                                        <Button mnemonicParsing="false" onAction="#bsearch" text="검색" />
+                                          <Button mnemonicParsing="false" onAction="#tbview" text="전체조회">
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin>
+                                          </Button>
                                                     </children>
                                                     <BorderPane.margin>
                                                         <Insets />

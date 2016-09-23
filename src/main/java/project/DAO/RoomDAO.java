@@ -13,7 +13,7 @@ import java.util.List;
  * Created by java on 2016-09-21.
  */
 public class RoomDAO extends config{
-    private final static String listReslist = "select * from room ";
+    private final static String listReslist = "select * from room order by rname desc";
     private final static String listOneReslist = "select * from room where roomid = ?";
     private final static String updateInfo= "update room set rname = ?,rsize = ?,rstair = ?, rmax = ?, maxfee =?, minfee =? where roomid = ?";
     private final static String insertInfo= "insert into  room values (?,?,?,?,?,?,?,?)";

@@ -12,9 +12,9 @@ import java.util.List;
 public class ResDAO extends config {
     private final static String listReslist = "select * from reslist";
     private final static String listCondionallist = "select * from reslist where (chkin between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)" +
-            "or (chkout between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)";
+            "or (chkouit between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)";
     private final static String listExtrallist = "select * from reservation right outer join room using(roomid) MINUS select * from reservation right outer join room using (roomid) where (chkin between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)" +
-            "or (chkout between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)";
+            "or (chkouit between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)";
 
 
     public static List<dPdir> viewReslist(){
@@ -30,7 +30,7 @@ public class ResDAO extends config {
                         rs.getString("CNAME"),
                         rs.getString("RNAME"),
                         rs.getString("CHKIN").substring(0, 10),
-                        rs.getString("CHKOUT").substring(0, 10),
+                        rs.getString("CHKOUIT").substring(0, 10),
                         rs.getString("PAYMENT"),
                         rs.getString("SNAME"),
                         rs.getString("HOWPERSON")
@@ -66,7 +66,7 @@ public class ResDAO extends config {
                         rs.getString("CNAME"),
                         rs.getString("RNAME"),
                         rs.getString("CHKIN").substring(0, 10),
-                        rs.getString("CHKOUT").substring(0, 10),
+                        rs.getString("CHKOUIT").substring(0, 10),
                         rs.getString("PAYMENT"),
                         rs.getString("SNAME"),
                         rs.getString("HOWPERSON")
