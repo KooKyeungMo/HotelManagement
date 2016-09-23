@@ -190,7 +190,7 @@ public class CustomDAO {
 
 
             pstmt.setString(1,cs.getName());
-            pstmt.setString(2,cs.getBirthday().substring(0,19));
+            pstmt.setString(2,cs.getBirthday());
             pstmt.setString(3,cs.getPhoneno());
             pstmt.setString(4,cs.getEmail());
             pstmt.setString(5,cs.getNo());
