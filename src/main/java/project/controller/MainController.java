@@ -23,79 +23,86 @@ import project.model.*;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 /**
  * Created by java on 2016-09-19.
  */
 public class MainController implements Initializable {
     @FXML
-    ComboBox combo,combo2,combo3;
+    ComboBox combo, combo2, combo3;
     @FXML
-    TextField input,input2,binput;
+    TextField input, input2, binput;
     @FXML
-    TabPane customer,room,reservation,board;
+    TabPane customer, room, reservation, board;
     @FXML
     Pane welcome;
     @FXML
     Button change;
     @FXML
-    DatePicker first,second;
+    DatePicker first, second;
     @FXML
     Label timebar;
 
-    private int day,month,year;
+    private int day, month, year;
 
     @FXML
-    TableView utable,ctable,mtable;
+    TableView utable, ctable, mtable;
     @FXML
-    TableColumn cno1,name1,level,mileage,available,expire,expiredate;
+    TableColumn cno1, name1, level, mileage, available, expire, expiredate;
     @FXML
-    TableColumn cno2,name2,resno1,room1,howPerson2,PayMent2;
+    TableColumn cno2, name2, resno1, room1, howPerson2, PayMent2;
     private ObservableList<akdlfflwl> mlist = FXCollections.observableArrayList();
 
     private ObservableList<dldydgusghkd> ulist = FXCollections.observableArrayList();
 
     @FXML
-    TableColumn no,cname,cid,birthday,email,phoneno,cregdate;
+    TableColumn no, cname, cid, birthday, email, phoneno, cregdate;
     private ObservableList<rhror> clist = FXCollections.observableArrayList();
 
     //예약약
-   @FXML private TableView reserv;
-    @FXML private TableColumn resno,resname,resroom,checkIn,checkOut,payMent,damDang,howPerson;
+    @FXML
+    private TableView reserv;
+    @FXML
+    private TableColumn resno, resname, resroom, checkIn, checkOut, payMent, damDang, howPerson;
     private ObservableList<dPdir> reslist = FXCollections.observableArrayList();
 
     //남으방
-    @FXML private TableView remainder;
-    @FXML private TableColumn remname,remroom,person,Acreage,roomPay,damDang2;
+    @FXML
+    private TableView remainder;
+    @FXML
+    private TableColumn remname, remroom, person, Acreage, roomPay, damDang2;
     private ObservableList<dPdir2> remlist = FXCollections.observableArrayList();
 
     //객실
-    @FXML private TableView rortlf;
-    @FXML private TableColumn remno1,remname1,Acreage1,floor1,person1,lowson1,highson1,regdate1;
+    @FXML
+    private TableView rortlf;
+    @FXML
+    private TableColumn remno1, remname1, Acreage1, floor1, person1, lowson1, highson1, regdate1;
     private ObservableList<Rortlf> rortlf1 = FXCollections.observableArrayList();
 
     //객실조회
-    @FXML private TableView rortlfwhghl;
-    @FXML private TableColumn remno2,remname2,Acreage2,floor2,person2,lowson2,highson2,regdate2;
+    @FXML
+    private TableView rortlfwhghl;
+    @FXML
+    private TableColumn remno2, remname2, Acreage2, floor2, person2, lowson2, highson2, regdate2;
     private ObservableList<rortlfWhghl> rortlf2 = FXCollections.observableArrayList();
 
     //게시판
-    @FXML private TableView rptlvks;  //bdtv
-    @FXML private TableColumn bdno, bdtitle, bdname, bddate, bdread;
+    @FXML
+    private TableView rptlvks;  //bdtv
+    @FXML
+    private TableColumn bdno, bdtitle, bdname, bddate, bdread;
     private ObservableList<rptlvks> rptlvka1 = FXCollections.observableArrayList();
     //bdlist
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Calendar c = Calendar.getInstance();
-        c.setTime( new Date() );
-        year =  c.get(Calendar.YEAR) ;
-        month =  c.get(Calendar.MONTH) + 1 ;
-        day =  c.get(Calendar.DAY_OF_MONTH) ;
+        c.setTime(new Date());
+        year = c.get(Calendar.YEAR);
+        month = c.get(Calendar.MONTH) + 1;
+        day = c.get(Calendar.DAY_OF_MONTH);
 
         Thread task = new Thread(() -> {
             SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd a HH:mm:ss");
@@ -195,14 +202,14 @@ public class MainController implements Initializable {
 
         }
 
-        ObservableList<String> comboList = FXCollections.observableArrayList("이름","아이디","전화번호");
+        ObservableList<String> comboList = FXCollections.observableArrayList("이름", "아이디", "전화번호");
         combo.setItems(comboList);
 
 
-        ObservableList<String> combo2List = FXCollections.observableArrayList("이름","층수","최대인원");
+        ObservableList<String> combo2List = FXCollections.observableArrayList("이름", "층수", "최대인원");
         combo2.setItems(combo2List);
 
-        ObservableList<String> combo3List = FXCollections.observableArrayList("작성자","제목");
+        ObservableList<String> combo3List = FXCollections.observableArrayList("작성자", "제목");
         combo3.setItems(combo3List);
     }
 
@@ -216,7 +223,7 @@ public class MainController implements Initializable {
         List<rhror> cs = CustomDAO.listCustom();
 
         clist.clear();
-        for(rhror m:cs){
+        for (rhror m : cs) {
             clist.add(m);
         }
 
@@ -226,7 +233,7 @@ public class MainController implements Initializable {
     public void setOnCustomer(String cname) {
         List<rhror> cs = CustomDAO.viewsearchCustom("이름", cname);
         clist.clear();
-        for(rhror m:cs){
+        for (rhror m : cs) {
             clist.add(m);
         }
 
@@ -239,9 +246,9 @@ public class MainController implements Initializable {
             mlist.add(mc);
         mtable.setItems(mlist);
 
-        List<dldydgusghkd> bd =(List<dldydgusghkd>)CustomDAO.uviewCustome(cno);
+        List<dldydgusghkd> bd = (List<dldydgusghkd>) CustomDAO.uviewCustome(cno);
         ulist.clear();
-        for(dldydgusghkd uc : bd)
+        for (dldydgusghkd uc : bd)
             ulist.add(uc);
         utable.setItems(ulist);
 
@@ -263,7 +270,7 @@ public class MainController implements Initializable {
         List<Rortlf> bds = RoomDAO.viewRoomInfo();
 
         rortlf1.clear();
-        for(Rortlf tmp : bds)
+        for (Rortlf tmp : bds)
             rortlf1.add(tmp);
 
         rortlf.setItems(rortlf1);
@@ -271,7 +278,7 @@ public class MainController implements Initializable {
         List<rortlfWhghl> bds2 = RoomDAO.viewRoomReg();
 
         rortlf2.clear();
-        for(rortlfWhghl tmp : bds2)
+        for (rortlfWhghl tmp : bds2)
             rortlf2.add(tmp);
 
         rortlfwhghl.setItems(rortlf2);
@@ -287,7 +294,7 @@ public class MainController implements Initializable {
         List<dPdir> bds = ResDAO.viewReslist();
 
         reslist.clear();
-        for(dPdir tmp : bds)
+        for (dPdir tmp : bds)
             reslist.add(tmp);
         reserv.setItems(reslist);
     }
@@ -304,13 +311,13 @@ public class MainController implements Initializable {
         rptlvks.setItems(rptlvka1);
 
         rptlvka1.clear();
-        for(rptlvks tmp : bds)
+        for (rptlvks tmp : bds)
             rptlvka1.add(tmp);
 
         rptlvks.setItems(rptlvka1);
     }
 
-        public void clickHome(Event event) {
+    public void clickHome(Event event) {
         customer.setVisible(false);
         room.setVisible(false);
         reservation.setVisible(false);
@@ -337,16 +344,14 @@ public class MainController implements Initializable {
     }
 
 
-
     public void clickResBtn(ActionEvent actionEvent) {
-        if(first.getValue() == null || second.getValue() == null){
+        if (first.getValue() == null || second.getValue() == null) {
             Alert err = new Alert(Alert.AlertType.ERROR);
             err.setTitle("ERROR");
             err.setHeaderText("날짜입력 확인");
             err.setContentText("확인하고 싶은 일자를 지정해 주십시오.");
             err.showAndWait();
-        }
-        else {
+        } else {
             String sdate = first.getValue().toString();
             String edate = second.getValue().toString();
 
@@ -361,29 +366,29 @@ public class MainController implements Initializable {
             List<dPdir2> bds2 = ResDAO.viewExtraReslist(sdate, edate);
 
             remlist.clear();
-            for(dPdir2 tmp : bds2)
+            for (dPdir2 tmp : bds2)
                 remlist.add(tmp);
             remainder.setItems(remlist);
         }
     }
 
     public void selectTableRow(MouseEvent event) {
-        if(event.getClickCount()==2) {
-            dPdir tmp = (dPdir)reserv.getSelectionModel().getSelectedItem();
+        if (event.getClickCount() == 2) {
+            dPdir tmp = (dPdir) reserv.getSelectionModel().getSelectedItem();
             setOnCustomer(tmp.getResname());
         }
     }
 
-    public void clickModify(ActionEvent actionEvent) throws Exception{
+    public void clickModify(ActionEvent actionEvent) throws Exception {
         int index = rortlf.getSelectionModel().getSelectedIndex();
         // 현재 선택한 행의 데이터를 BoardModel 객체로 받음
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/registration.fxml"));
         Parent root = loader.load();
         RoomMNGController roomctl = loader.getController();
-        roomctl.sendData( rortlf1,index);
+        roomctl.sendData(rortlf1, index);
 
-        Stage prev = (Stage)change.getScene().getWindow();
+        Stage prev = (Stage) change.getScene().getWindow();
 
         Stage stage = new Stage();
         stage.setTitle("방정보 수정하기");
@@ -395,13 +400,13 @@ public class MainController implements Initializable {
         stage.show();
     }
 
-    public void clickRegister(ActionEvent actionEvent) throws  Exception{
+    public void clickRegister(ActionEvent actionEvent) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/registration.fxml"));
         Parent root = loader.load();
         RoomMNGController roomctl = loader.getController();
-        roomctl.sendData( rortlf1);
+        roomctl.sendData(rortlf1);
 
-        Stage prev = (Stage)change.getScene().getWindow();
+        Stage prev = (Stage) change.getScene().getWindow();
 
         Stage stage = new Stage();
         stage.setTitle("새로운 방 정보 등록하기");
@@ -474,13 +479,13 @@ public class MainController implements Initializable {
         confirm.setHeaderText("");
         confirm.setContentText("정말로 삭제하시겠습니까?");
 
-        ButtonType okbtn = new ButtonType("삭제",ButtonBar.ButtonData.OK_DONE);
-        ButtonType nobtn = new ButtonType("취소",ButtonBar.ButtonData.CANCEL_CLOSE);
-        confirm.getButtonTypes().setAll(okbtn,nobtn);
+        ButtonType okbtn = new ButtonType("삭제", ButtonBar.ButtonData.OK_DONE);
+        ButtonType nobtn = new ButtonType("취소", ButtonBar.ButtonData.CANCEL_CLOSE);
+        confirm.getButtonTypes().setAll(okbtn, nobtn);
 
         String text = confirm.showAndWait().get().getText();
         //클릭한 버튼에 씌여진 문자열을 알아냄
-        if(text.equals("삭제")){
+        if (text.equals("삭제")) {
             int num = ctable.getSelectionModel().getSelectedIndex();
             //선택한 행번호 알아냄
             String cno = clist.get(num).getNo();
@@ -495,7 +500,7 @@ public class MainController implements Initializable {
 
     }
 
-    public void modify(ActionEvent event) throws Exception{
+    public void modify(ActionEvent event) throws Exception {
         int num = ctable.getSelectionModel().getSelectedIndex();
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Cmodify.fxml"));
@@ -524,18 +529,18 @@ public class MainController implements Initializable {
             mlist.add(mc);
         mtable.setItems(mlist);
 
-        List<dldydgusghkd> bd =(List<dldydgusghkd>)CustomDAO.uviewCustome(cno);
+        List<dldydgusghkd> bd = (List<dldydgusghkd>) CustomDAO.uviewCustome(cno);
         ulist.clear();
-        for(dldydgusghkd uc : bd)
+        for (dldydgusghkd uc : bd)
             ulist.add(uc);
         utable.setItems(ulist);
 
     }
 
 
-    public void showRoomInfo(MouseEvent event) throws Exception{
-        if(event.getClickCount()==2) {
-            rortlfWhghl tmp = (rortlfWhghl)rortlfwhghl.getSelectionModel().getSelectedItem();
+    public void showRoomInfo(MouseEvent event) throws Exception {
+        if (event.getClickCount() == 2) {
+            rortlfWhghl tmp = (rortlfWhghl) rortlfwhghl.getSelectionModel().getSelectedItem();
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/roominfo.fxml"));
             Parent root = loader.load();
@@ -543,7 +548,7 @@ public class MainController implements Initializable {
             RoomInfoController roomctl = loader.getController();
             roomctl.sendData(tmp.getRemno2());
 
-            Stage prev = (Stage)rortlfwhghl.getScene().getWindow();
+            Stage prev = (Stage) rortlfwhghl.getScene().getWindow();
 
             Stage stage = new Stage();
             stage.setTitle("방정보 상세보기");
@@ -583,12 +588,12 @@ public class MainController implements Initializable {
             for (rortlfWhghl ror : bds)
                 rortlf2.add(ror);
             rortlfwhghl.setItems(rortlf2);
-       }
+        }
     }
 
-    public void clickBoard(MouseEvent event) throws Exception{
-        if(event.getClickCount()==2) {
-            rptlvks tmp = (rptlvks)rptlvks.getSelectionModel().getSelectedItem();
+    public void clickBoard(MouseEvent event) throws Exception {
+        if (event.getClickCount() == 2) {
+            rptlvks tmp = (rptlvks) rptlvks.getSelectionModel().getSelectedItem();
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/viewBoard.fxml"));
             Parent root = loader.load();
@@ -596,7 +601,7 @@ public class MainController implements Initializable {
             BoardController bctl = loader.getController();
             bctl.sendBdno(tmp.getBdno());
 
-            Stage prev = (Stage)rptlvks.getScene().getWindow();
+            Stage prev = (Stage) rptlvks.getScene().getWindow();
 
             Stage stage = new Stage();
             stage.setTitle(tmp.getBdtitle());
@@ -607,7 +612,7 @@ public class MainController implements Initializable {
             stage.initOwner(prev);
             stage.show();
 
-            tmp.setBdread(String.valueOf(Integer.parseInt(tmp.getBdread())+1));
+            tmp.setBdread(String.valueOf(Integer.parseInt(tmp.getBdread()) + 1));
         }
     }
 
@@ -648,5 +653,38 @@ public class MainController implements Initializable {
         for (rptlvks tmp : bds)
             rptlvka1.add(tmp);
         rptlvks.setItems(rptlvka1);
+    }
+
+    public void logoutBtn(Event event) {
+        Alert warn = new Alert(Alert.AlertType.CONFIRMATION);
+        warn.setTitle("종료");
+        warn.setContentText("정말 삭제 하시겠습니까?");
+        Optional<ButtonType> result = warn.showAndWait();
+
+        if (result.get() == ButtonType.OK) {
+            Platform.exit();
+        } else {
+            event.consume();
+        }
+
+    }
+
+    public void deleteRoom(ActionEvent actionEvent) {
+        Rortlf tmp = (Rortlf) rortlf.getSelectionModel().getSelectedItem();
+
+        Alert warn = new Alert(Alert.AlertType.CONFIRMATION);
+        warn.setTitle("종료");
+        warn.setContentText("정말 삭제 하시겠습니까?");
+        Optional<ButtonType> result = warn.showAndWait();
+
+        if (result.get() == ButtonType.OK) {
+            rortlf1.remove(tmp);
+            rortlfwhghl.setItems(rortlf1);
+
+            System.out.println(tmp.getRemno1());
+            RoomDAO.deleteRoom(tmp.getRemno1());
+        } else {
+            actionEvent.consume();
+        }
     }
 }

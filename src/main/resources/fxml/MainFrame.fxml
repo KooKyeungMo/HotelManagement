@@ -12,10 +12,12 @@
     <bottom>
         <Pane prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="timebar" layoutX="732.0" layoutY="3.0" prefHeight="33.0" prefWidth="270.0" text="Label">
+            <Label fx:id="timebar" layoutX="834.0" layoutY="5.0" prefHeight="33.0" prefWidth="270.0" text="Label" />
+            <Label layoutX="343.0" layoutY="10.0" text="Copyright(C) HOTEL JAVARA CO.,LTD. All Rights Reserved.">
                <font>
-                  <Font size="17.0" />
-               </font></Label>
+                  <Font size="13.0" />
+               </font>
+            </Label>
          </children></Pane>
     </bottom>
     <top>
@@ -70,7 +72,7 @@
                 </Label>
                 <Label onMouseClicked="#setOnBoard" prefHeight="30.0" styleClass="menubar" text="  게시판  ">
                     <HBox.margin>
-                        <Insets right="20.0" />
+                        <Insets />
                     </HBox.margin>
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
@@ -80,6 +82,15 @@
                         </ImageView>
                     </graphic>
                 </Label>
+            <Label onMouseClicked="#logoutBtn" prefHeight="30.0" styleClass="menubar" text="  로그아웃">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/img/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
             </children></HBox>
     </top>
     <center>
@@ -175,7 +186,7 @@
                                         </TableView>
                                         <HBox alignment="CENTER" layoutX="730.0" layoutY="75.0" prefHeight="29.0" prefWidth="203.0" spacing="15.0">
                                             <children>
-                                                <Button fx:id="delete" mnemonicParsing="false" text="삭제" />
+                                                <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteRoom" text="삭제" />
                                                 <Button fx:id="change" mnemonicParsing="false" onAction="#clickModify" text="수정" />
                                                 <Button fx:id="registration" mnemonicParsing="false" onAction="#clickRegister" text="등록" />
                                             </children>

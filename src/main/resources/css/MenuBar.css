@@ -1,3 +1,6 @@
 .menubar:hover{
     -fx-border-color: black;
 }
+.menubar{
+-fx-pref-width: 100;
+}

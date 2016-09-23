@@ -20,8 +20,7 @@ public class rhror {
     private SimpleStringProperty phoneno;
     private SimpleStringProperty cregdate;
 
-
-    public rhror(String cno, String cname, String cusid, String birthday, String email, String pnum, String regdate) {
+    public rhror(String cno, String cname, String cusid, String birthday,  String pnum,String email, String regdate) {
         this.no = new SimpleStringProperty(cno);
         this.name = new SimpleStringProperty(cname);
         this.cid = new SimpleStringProperty(cusid);

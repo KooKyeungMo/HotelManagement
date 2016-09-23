@@ -17,6 +17,7 @@ public class RoomDAO extends config{
     private final static String listOneReslist = "select * from room where roomid = ?";
     private final static String updateInfo= "update room set rname = ?,rsize = ?,rstair = ?, rmax = ?, maxfee =?, minfee =? where roomid = ?";
     private final static String insertInfo= "insert into  room values (?,?,?,?,?,?,?,?)";
+    private final static String deleteRM= "delete from room where roomid = ?";
 
 
     public static List<Rortlf> viewRoomInfo(){
@@ -159,6 +160,21 @@ public class RoomDAO extends config{
             closeConn();
         }
         return result;
+    }
+
+    public static void deleteRoom(String remno2) {
+        makeConn();
+        try {
+            psmt = conn.prepareStatement(deleteRM);
+            psmt.setString(1, remno2);
+
+            psmt.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            closeConn();
+        }
     }
 }
 

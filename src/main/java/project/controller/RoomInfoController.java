@@ -5,6 +5,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import project.DAO.RoomDAO;
 import project.model.Rortlf;
@@ -20,6 +22,8 @@ public class RoomInfoController implements Initializable {
     String no;
     @FXML
     TextField rno,rname,stair,size,person,max,min,regdate;
+    @FXML
+    ImageView rimg,rimgg;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -45,6 +49,10 @@ public class RoomInfoController implements Initializable {
         max.setText(tmp.getHighson2());
         min.setText(tmp.getLowson2());
         regdate.setText(tmp.getRegdate2().substring(0,10));
+        System.out.println(rno);
+
+        rimg.setImage(new Image(getClass().getResource("/img/"+rno+"-1.png").toString(), true));
+        rimgg.setImage(new Image(getClass().getResource("/img/"+rno+"-2.png").toString(), true));
     }
 
     public void closeRegWindow(ActionEvent actionEvent) {
