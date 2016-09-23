@@ -15,6 +15,7 @@ import java.util.List;
 public class RoomDAO extends config{
     private final static String listReslist = "select * from room order by rname desc";
     private final static String listOneReslist = "select * from room where roomid = ?";
+    private final static String selectRoomID = "select roomid from room where rname = ?";
     private final static String updateInfo= "update room set rname = ?,rsize = ?,rstair = ?, rmax = ?, maxfee =?, minfee =? where roomid = ?";
     private final static String insertInfo= "insert into  room values (?,?,?,?,?,?,?,?)";
     private final static String deleteRM= "delete from room where roomid = ?";
@@ -153,6 +154,27 @@ public class RoomDAO extends config{
                         rs.getString("minfee"),
                         rs.getString("regdate")
                 );
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            closeConn();
+        }
+        return result;
+    }
+    public static rortlfWhghl selectInfo2(String rname) {
+        makeConn();
+        rortlfWhghl result=null;
+        try {
+            psmt = conn.prepareStatement(selectRoomID);
+            psmt.setString(1, rname);
+
+            rs = psmt.executeQuery();
+            rs.next();
+
+            String tmp = rs.getString("roomid");
+            closeConn();
+            result = selectInfo(tmp);
 
         } catch (Exception e) {
             e.printStackTrace();

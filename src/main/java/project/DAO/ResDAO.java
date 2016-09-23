@@ -13,8 +13,10 @@ public class ResDAO extends config {
     private final static String listReslist = "select * from reslist";
     private final static String listCondionallist = "select * from reslist where (chkin between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)" +
             "or (chkouit between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)";
-    private final static String listExtrallist = "select * from reservation right outer join room using(roomid) MINUS select * from reservation right outer join room using (roomid) where (chkin between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)" +
-            "or (chkouit between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)";
+    private final static String listExtrallist = "select * from room where roomid not in (select roomid from reservation right outer join room using (roomid) where \n" +
+            "(chkin between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)\n" +
+            "or\n" +
+            "(chkouit between to_date(?,'YYYY-MM-DD-HH') and to_date(?,'YYYY-MM-DD-HH') + 0.99999)) order by rname desc";
 
 
     public static List<dPdir> viewReslist(){
@@ -102,11 +104,11 @@ public class ResDAO extends config {
             while (rs.next()) {
                 dPdir2 m = new dPdir2(
                         rs.getString("RNAME"),
-                        "남은객실X",
+                        rs.getString("rstair"),
                         rs.getString("RMAX"),
                         rs.getString("RSIZE"),
                         rs.getString("maxfee"),
-                        "담당자X"
+                        rs.getString("minfee")
                 );
                 result.add(m);
             }

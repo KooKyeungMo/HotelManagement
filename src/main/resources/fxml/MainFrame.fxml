@@ -325,14 +325,14 @@
                                         </Pane>
                                         <Pane layoutX="162.0" layoutY="372.0" prefHeight="300.0" prefWidth="700.0">
                                             <children>
-                                                <TableView fx:id="remainder" prefHeight="300.0" prefWidth="700.0">
+                                                <TableView fx:id="remainder" onMouseClicked="#clickExtra" prefHeight="300.0" prefWidth="700.0">
                                                     <columns>
                                                         <TableColumn fx:id="remname" editable="false" prefWidth="144.0" text="남은 객실 이름" />
-                                                        <TableColumn fx:id="remroom" editable="false" prefWidth="100.0" text="남은 객실 수" />
+                                                        <TableColumn fx:id="remroom" editable="false" prefWidth="100.0" text="객실 층수" />
                                                         <TableColumn fx:id="person" editable="false" prefWidth="105.0" text="객실 적정 인원" />
                                                         <TableColumn fx:id="Acreage" editable="false" prefWidth="120.0" text="객실 면적" />
-                                                        <TableColumn fx:id="roomPay" editable="false" prefWidth="120.0" text="객실 요금" />
-                                                        <TableColumn fx:id="damDang2" editable="false" prefWidth="110.0" text="담당자" />
+                                                        <TableColumn fx:id="roomPay" editable="false" prefWidth="120.0" text="비수기 요금" />
+                                                        <TableColumn fx:id="damDang2" editable="false" prefWidth="110.0" text="성수기 요금" />
                                                     </columns>
                                                 </TableView>
                                             </children>

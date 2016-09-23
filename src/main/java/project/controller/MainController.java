@@ -687,4 +687,28 @@ public class MainController implements Initializable {
             actionEvent.consume();
         }
     }
+
+    public void clickExtra(MouseEvent event) throws Exception{
+        if(event.getClickCount() ==2){
+            dPdir2 tmp = (dPdir2)remainder.getSelectionModel().getSelectedItem();
+            rortlfWhghl temp = RoomDAO.selectInfo2(tmp.getRemname());
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/roominfo.fxml"));
+            Parent root = loader.load();
+
+            RoomInfoController roomctl = loader.getController();
+            roomctl.sendData(temp.getRemno2());
+
+            Stage prev = (Stage) rortlfwhghl.getScene().getWindow();
+
+            Stage stage = new Stage();
+            stage.setTitle("방정보 상세보기");
+            stage.setScene(new Scene(root));
+            stage.setResizable(false);
+            stage.centerOnScreen();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(prev);
+            stage.show();
+        }
+    }
 }
