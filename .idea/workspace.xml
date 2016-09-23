@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce618eb9-be19-46c1-ae7e-313b3f3d06c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/16-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/16-2.png" />
+    <list default="true" id="ce618eb9-be19-46c1-ae7e-313b3f3d06c1" name="Default" comment="진짜 완성판!">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JAVARA Hotel.pptx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/DAO/ResDAO.java" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/ResDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project/DAO/RoomDAO.java" afterPath="$PROJECT_DIR$/src/main/java/project/DAO/RoomDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/registration.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/registration.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HotelManagement.iws" />
@@ -36,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+              <caret line="721" column="38" selection-start-line="721" selection-start-column="38" selection-end-line="721" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,16 +58,6 @@
                 <marker date="1474610294880" expanded="true" signature="644:945" placeholder="select roomi..reservation..." />
                 <marker date="1474610294880" expanded="true" signature="945:946" placeholder="select * fro..reservation..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rhror.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/model/rhror.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -105,25 +94,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5">
-              <caret line="332" column="53" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.9770115">
+              <caret line="229" column="62" selection-start-line="229" selection-start-column="62" selection-end-line="229" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomInfoController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoomInfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7225807">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+              <folding>
+                <marker date="1474612016814" expanded="true" signature="636:798" placeholder="select c.cno..customer..." />
+                <marker date="1474612016814" expanded="true" signature="857:933" placeholder="insert into ..." />
+                <marker date="1474612016814" expanded="true" signature="978:1061" placeholder="select cno,c..CUSTOMER..." />
+                <marker date="1474612016814" expanded="true" signature="1106:1161" placeholder="select * fro..CUSTOMER..." />
+                <marker date="1474612016814" expanded="true" signature="1208:1242" placeholder="delete from ..." />
+                <marker date="1474612016814" expanded="true" signature="1289:1417" placeholder="update CUSTO..." />
+                <marker date="1474612016814" expanded="true" signature="1469:1507" placeholder="select * fro..CUSTOMER..." />
+                <marker date="1474612016814" expanded="true" signature="1560:1598" placeholder="select * fro..CUSTOMER..." />
+                <marker date="1474612016814" expanded="true" signature="1651:1688" placeholder="select * fro..CUSTOMER..." />
+                <marker date="1474612016814" expanded="true" signature="1734:1827" placeholder="select cno, ..CUSTOMER..." />
+                <marker date="1474612016814" expanded="true" signature="1868:1925" placeholder="select * fro..customer..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,16 +193,16 @@
         <option value="$PROJECT_DIR$/src/main/java/project/model/rptlvks.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/viewBoard.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/BoardController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/DAO/BoardDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/model/rhror.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/MenuBar.css" />
         <option value="$PROJECT_DIR$/src/main/java/project/DAO/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/DAO/ResDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/DAO/RoomDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml" />
       </list>
     </option>
   </component>
@@ -263,6 +274,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HotelManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,7 +608,7 @@
       <updated>1474531289449</updated>
       <workItem from="1474531290121" duration="153000" />
       <workItem from="1474531785142" duration="17662000" />
-      <workItem from="1474601131530" duration="9844000" />
+      <workItem from="1474601131530" duration="11419000" />
     </task>
     <task id="LOCAL-00001" summary="javafx maven">
       <created>1474531363450</created>
@@ -639,11 +664,17 @@
       <option name="project" value="LOCAL" />
       <updated>1474607510723</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="완성판!!!">
+      <created>1474611448088</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1474611448088</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27659000" />
+    <option name="totallyTimeSpent" value="29234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -696,7 +727,8 @@
     <MESSAGE value="최종버전!" />
     <MESSAGE value="최종버전v2" />
     <MESSAGE value="최종버전v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="최종버전v3" />
+    <MESSAGE value="완성판!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="완성판!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -803,17 +835,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="90" selection-start-line="33" selection-start-column="90" selection-end-line="33" selection-end-column="90" />
           <folding>
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select c.cno..customer..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select cno,c..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="update CUSTO..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select cno, ..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..customer..." />
+            <marker date="1474612016814" expanded="true" signature="636:798" placeholder="select c.cno..customer..." />
+            <marker date="1474612016814" expanded="true" signature="857:933" placeholder="insert into ..." />
+            <marker date="1474612016814" expanded="true" signature="978:1061" placeholder="select cno,c..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1106:1161" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1208:1242" placeholder="delete from ..." />
+            <marker date="1474612016814" expanded="true" signature="1289:1417" placeholder="update CUSTO..." />
+            <marker date="1474612016814" expanded="true" signature="1469:1507" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1560:1598" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1651:1688" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1734:1827" placeholder="select cno, ..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1868:1925" placeholder="select * fro..customer..." />
           </folding>
         </state>
       </provider>
@@ -996,26 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="90" selection-start-line="33" selection-start-column="90" selection-end-line="33" selection-end-column="90" />
-          <folding>
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select c.cno..customer..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select cno,c..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="update CUSTO..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select cno, ..CUSTOMER..." />
-            <marker date="1474598999842" expanded="true" signature="-1:-1" placeholder="select * fro..customer..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/DAO/BoardDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1102,14 +1114,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="332" column="53" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/DAO/CustomDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <marker date="1474612016814" expanded="true" signature="636:798" placeholder="select c.cno..customer..." />
+            <marker date="1474612016814" expanded="true" signature="857:933" placeholder="insert into ..." />
+            <marker date="1474612016814" expanded="true" signature="978:1061" placeholder="select cno,c..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1106:1161" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1208:1242" placeholder="delete from ..." />
+            <marker date="1474612016814" expanded="true" signature="1289:1417" placeholder="update CUSTO..." />
+            <marker date="1474612016814" expanded="true" signature="1469:1507" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1560:1598" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1651:1688" placeholder="select * fro..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1734:1827" placeholder="select cno, ..CUSTOMER..." />
+            <marker date="1474612016814" expanded="true" signature="1868:1925" placeholder="select * fro..customer..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="721" column="38" selection-start-line="721" selection-start-column="38" selection-end-line="721" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,20 +1167,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainFrame.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controller/RoomInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7225807">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.9770115">
+          <caret line="229" column="62" selection-start-line="229" selection-start-column="62" selection-end-line="229" selection-end-column="62" />
           <folding />
         </state>
       </provider>

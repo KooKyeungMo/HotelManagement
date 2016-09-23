@@ -132,7 +132,7 @@ public class CustomDAO {
 
             while (rs.next()){
                 rhror m =new rhror(rs.getString("cno"),rs.getString("cname"),
-                        rs.getString("cusid"),rs.getString("birthday"),rs.getString("pnum"),
+                        rs.getString("cusid"),rs.getString("birthday").substring(0,10),rs.getString("pnum"),
                         rs.getString("email"),rs.getString("regdate").substring(0,10));
 
                 result.add(m);
@@ -163,7 +163,7 @@ public class CustomDAO {
 
             while(rs.next()){
                 result = new rhror(rs.getString("cno"),rs.getString("cname"),
-                        rs.getString("cusid"),rs.getString("birthday"),rs.getString("pnum"),
+                        rs.getString("cusid"),rs.getString("birthday").substring(0,10),rs.getString("pnum"),
                         rs.getString("email"),rs.getString("regdate").substring(0,10));
 
             }

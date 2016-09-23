@@ -711,4 +711,14 @@ public class MainController implements Initializable {
             stage.show();
         }
     }
+
+    public void clickReset(ActionEvent actionEvent) {
+        List<rortlfWhghl> bds2 = RoomDAO.viewRoomReg();
+
+        rortlf2.clear();
+        for (rortlfWhghl tmp : bds2)
+            rortlf2.add(tmp);
+
+        rortlfwhghl.setItems(rortlf2);
+    }
 }

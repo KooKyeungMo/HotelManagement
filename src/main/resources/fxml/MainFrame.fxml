@@ -166,7 +166,7 @@
                         </Tab>
                     </tabs>
                 </TabPane>
-                <TabPane fx:id="room" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+                <TabPane fx:id="room" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
                     <tabs>
                         <Tab text="객실 관리">
                             <content>
@@ -207,19 +207,32 @@
                             <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                     <children>
-                                        <HBox layoutX="301.0" layoutY="88.0" prefHeight="24.0" prefWidth="211.0">
+                                        <HBox layoutX="201.0" layoutY="97.0" prefHeight="24.0" prefWidth="619.0">
                                             <children>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" text="객실 검색" textAlignment="CENTER">
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="63.0" text="객실 검색" textAlignment="CENTER">
                                                     <font>
-                                                        <Font size="13.0" />
-                                                    </font></Label>
-                                                <ComboBox fx:id="combo2" prefWidth="150.0" promptText="조건 선택" />
-                                            </children>
-                                        </HBox>
-                                        <HBox layoutX="512.0" layoutY="88.0" prefHeight="20.0" prefWidth="236.0" spacing="5.0">
-                                            <children>
-                                                <TextField fx:id="input2" alignment="CENTER" />
-                                                <Button mnemonicParsing="false" onAction="#search2" text="검색" />
+                                                        <Font size="14.0" />
+                                                    </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin></Label>
+                                                <ComboBox fx:id="combo2" prefWidth="150.0" promptText="조건 선택">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin></ComboBox>
+                                                <TextField fx:id="input2" alignment="CENTER">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin></TextField>
+                                                <Button mnemonicParsing="false" onAction="#search2" prefHeight="23.0" prefWidth="61.0" text="검색">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin></Button>
+                                    <Button mnemonicParsing="false" onAction="#clickReset" text="전체보기">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Button>
                                             </children>
                                         </HBox>
                                         <TableView fx:id="rortlfwhghl" layoutX="102.0" layoutY="137.0" onMouseClicked="#showRoomInfo" prefHeight="259.0" prefWidth="800.0">
@@ -257,7 +270,6 @@
                                                     </image></ImageView>
                                             </children>
                                         </HBox>
-                                        <ScrollBar layoutX="103.0" layoutY="579.0" prefHeight="14.0" prefWidth="816.0" />
                                     </children></AnchorPane>
                             </content>
                         </Tab>
@@ -387,7 +399,7 @@
                         </Tab>
                     </tabs>
                 </TabPane>
-                <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0">
+                <Pane fx:id="welcome" prefHeight="200.0" prefWidth="200.0" visible="false">
                     <children>
                         <ImageView fitHeight="637.0" fitWidth="966.0" layoutX="34.0" layoutY="33.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
                             <image>
