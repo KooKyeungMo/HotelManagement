@@ -339,11 +339,10 @@
                                     <children>
                                         <BorderPane layoutX="56.0" layoutY="31.0" prefHeight="620.0" prefWidth="914.0">
                                             <center>
-                                                <TableView fx:id="rptlvks" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                <TableView fx:id="rptlvks" onMouseClicked="#clickBoard" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                                                     <columns>
                                                         <TableColumn fx:id="bdno" prefWidth="75.0" text="No" />
                                                         <TableColumn fx:id="bdtitle" prefWidth="409.0" text="글제목" />
-                                                        <TableColumn fx:id="bdsub" minWidth="0.0" prefWidth="85.0" text="첨부" />
                                                         <TableColumn fx:id="bdname" prefWidth="111.0" text="글쓴이" />
                                                         <TableColumn fx:id="bddate" prefWidth="121.0" text="작성일" />
                                                         <TableColumn fx:id="bdread" prefWidth="112.0" text="조회수" />

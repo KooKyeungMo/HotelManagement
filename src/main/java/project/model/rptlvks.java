@@ -8,15 +8,13 @@ import javafx.beans.property.SimpleStringProperty;
 public class rptlvks {
     private SimpleStringProperty bdno;
     private SimpleStringProperty bdtitle;
-    private SimpleStringProperty bdsub;
     private SimpleStringProperty bdname;
     private SimpleStringProperty bddate;
     private SimpleStringProperty bdread;
 
-    public rptlvks(String bdno, String bdtitle, String bdsub, String bdname, String bddate, String bdread){
+    public rptlvks(String bdno, String bdtitle, String bdname, String bddate, String bdread){
         this.bdno = new SimpleStringProperty(bdno);
         this.bdtitle = new SimpleStringProperty(bdtitle);
-        this.bdsub = new SimpleStringProperty(bdsub);
         this.bdname = new SimpleStringProperty(bdname);
         this.bddate = new SimpleStringProperty(bddate);
         this.bdread = new SimpleStringProperty(bdread);
@@ -44,18 +42,6 @@ public class rptlvks {
 
     public void setBdtitle(String bdtitle) {
         this.bdtitle.set(bdtitle);
-    }
-
-    public String getBdsub() {
-        return bdsub.get();
-    }
-
-    public SimpleStringProperty bdsubProperty() {
-        return bdsub;
-    }
-
-    public void setBdsub(String bdsub) {
-        this.bdsub.set(bdsub);
     }
 
     public String getBdname() {

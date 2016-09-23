@@ -85,8 +85,8 @@ public class MainController implements Initializable {
 
     //게시판
     @FXML private TableView rptlvks;  //bdtv
-    @FXML private TableColumn bdno, bdtitle, bdsub, bdname, bddate, bdread;
-    private ObservableList<rptlvks> rptlvka1 = null;
+    @FXML private TableColumn bdno, bdtitle, bdname, bddate, bdread;
+    private ObservableList<rptlvks> rptlvka1 = FXCollections.observableArrayList();
     //bdlist
 
     @Override
@@ -180,11 +180,9 @@ public class MainController implements Initializable {
         {
             bdno.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bdno"));
             bdtitle.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bdtitle"));
-            bdsub.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bdsub"));
             bdname.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bdname"));
             bddate.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bddate"));
             bdread.setCellValueFactory(new PropertyValueFactory<rptlvks, String>("bdread"));
-
         }
         {
             cno2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("cno2"));
@@ -195,11 +193,6 @@ public class MainController implements Initializable {
             PayMent2.setCellValueFactory(new PropertyValueFactory<dldydgusghkd, String>("payMent2"));
 
         }
-        rptlvka1 = FXCollections.observableArrayList();
-        rptlvka1.add(new rptlvks("공지","특가 행사 예약","","관리자","2016-09-21", "2" ));
-        rptlvka1.add(new rptlvks("101","예약문의","","고객님","2016-09-22", "3" ));
-
-        rptlvks.setItems(rptlvka1);
 
         ObservableList<String> comboList = FXCollections.observableArrayList("이름","아이디","전화번호");
         combo.setItems(comboList);
@@ -304,6 +297,16 @@ public class MainController implements Initializable {
         reservation.setVisible(false);
         board.setVisible(true);
         welcome.setVisible(false);
+
+        List<rptlvks> bds = BoardDAO.viewBoard();
+
+        rptlvks.setItems(rptlvka1);
+
+        rptlvka1.clear();
+        for(rptlvks tmp : bds)
+            rptlvka1.add(tmp);
+
+        rptlvks.setItems(rptlvka1);
     }
 
         public void clickHome(Event event) {
@@ -605,5 +608,12 @@ public class MainController implements Initializable {
                 rortlf2.add(ror);
             rortlfwhghl.setItems(rortlf2);
        }
+    }
+
+    public void clickBoard(MouseEvent event) {
+        if(event.getClickCount()==2) {
+            rptlvks tmp = (rptlvks)rptlvks.getSelectionModel().getSelectedItem();
+            System.out.println(tmp.getBdtitle());
+        }
     }
 }
